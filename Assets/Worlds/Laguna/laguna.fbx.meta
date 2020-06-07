@@ -1,0 +1,1096 @@
+fileFormatVersion: 2
+guid: be8e648f7e2da8f4e9e4d7ff91a1f883
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00000-texture
+    second: {fileID: 2800000, guid: 00f0d17eaf63bf04d9a2afde0aedf1b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00001-texture
+    second: {fileID: 2800000, guid: 7080516090c5e9f408e0a78e51575520, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00002-texture
+    second: {fileID: 2800000, guid: ee50945d350f2544186ad0985d82a2e3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00003-texture
+    second: {fileID: 2800000, guid: e7b04ebf07e25d84dbef3cca3fe7509f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00004-texture
+    second: {fileID: 2800000, guid: 7d906c8d370eede4a918b19280f5edf4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00005-texture
+    second: {fileID: 2800000, guid: 005047712b0b87d4baf09fd232915bf4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00006-texture
+    second: {fileID: 2800000, guid: 34cd397400122e441b63a5ebf91c3087, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00007-texture
+    second: {fileID: 2800000, guid: 8b7227b7208d9a541b982180d8995ea2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00008-texture
+    second: {fileID: 2800000, guid: 7450f15602ea42e44825e32445b44ad2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00009-texture
+    second: {fileID: 2800000, guid: 56df0c04b2fcf58498bfb824004b1804, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00010-texture
+    second: {fileID: 2800000, guid: b721b8e5cf769b64bad9399fc762fef0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00011-texture
+    second: {fileID: 2800000, guid: 5faaf48ea2961724ca16fedcb8bb2df0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00012-texture
+    second: {fileID: 2800000, guid: a0fff17aa7098804da797ce8c5fb41cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00013-texture
+    second: {fileID: 2800000, guid: 2bae748dac4159747a002749d423a37a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00014-texture
+    second: {fileID: 2800000, guid: c3a8357b3383d8f499abf838cfd467ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00015-texture
+    second: {fileID: 2800000, guid: 69e71c8e6aa65004694bdb099a7b1131, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00016-texture
+    second: {fileID: 2800000, guid: 2e0913719d1ba9941b8bee48dc2dc001, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00017-texture
+    second: {fileID: 2800000, guid: fab24da448105c442ab56aa898e3d63e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00018-texture
+    second: {fileID: 2800000, guid: 2284275a62639f74487734fadd6c7481, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00019-texture
+    second: {fileID: 2800000, guid: 7205f332a8e611d4c8101ca3a92e189c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00020-texture
+    second: {fileID: 2800000, guid: 7b6d8562f694aaf408cada65ca003517, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00021-texture
+    second: {fileID: 2800000, guid: c4e897a08e664904990f13c87f8bf5ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00022-texture
+    second: {fileID: 2800000, guid: 4713c8991a4942949abd547776f816b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00023-texture
+    second: {fileID: 2800000, guid: 7cc5e3946881b6e4f8a948c1c7611cba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00024-texture
+    second: {fileID: 2800000, guid: 2bb1adda240d8f34fa0bac91c1daa00a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00025-texture
+    second: {fileID: 2800000, guid: 8a0469874a4d1a84e89a9b8e8dd7d153, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00026-texture
+    second: {fileID: 2800000, guid: 61f5f548cf12fd94e932e0c51002f618, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00027-texture
+    second: {fileID: 2800000, guid: 6be5261d338a50846b57971aaab0085d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00028-texture
+    second: {fileID: 2800000, guid: 3a1cba113dee29b4ab6996b7d9af47d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00029-texture
+    second: {fileID: 2800000, guid: 408af836f80804a49a204b6dc6c771f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00030-texture
+    second: {fileID: 2800000, guid: bca845c1f5cdfd44d9e3e41a8e65c837, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00031-texture
+    second: {fileID: 2800000, guid: 9315c3faf5cb6a143bdcaf59cdbc4a61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00032-texture
+    second: {fileID: 2800000, guid: 85fe22a1c2d3ff14483d53c8d86017ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00033-texture
+    second: {fileID: 2800000, guid: 473ff6faf81b55f42a3923b567655334, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00034-texture
+    second: {fileID: 2800000, guid: f2740f7cf52121d4b8bce2dc0b9c0990, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00035-texture
+    second: {fileID: 2800000, guid: 549e6aa90414a984bb007f720728e5c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00036-texture
+    second: {fileID: 2800000, guid: f36ced3d8c2f65c48995a927e1e68fe6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00037-texture
+    second: {fileID: 2800000, guid: cae10644452e4bd42a32678d2636313f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00038-texture
+    second: {fileID: 2800000, guid: 4b32661b04d60bb4dacaf153f587b0fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00039-texture
+    second: {fileID: 2800000, guid: 106a65a23dab96c42994688e4fb4d8bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00040-texture
+    second: {fileID: 2800000, guid: 8bec54b0092fd674fa035618e6f02caf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00041-texture
+    second: {fileID: 2800000, guid: 5c7114ec36dacb340ab46b3839bb2794, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00042-texture
+    second: {fileID: 2800000, guid: 360fab8abd5eb544aa114da2033ac131, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00043-texture
+    second: {fileID: 2800000, guid: 00c64bb97f49e9c4ca632c2dbc45589d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00044-texture
+    second: {fileID: 2800000, guid: 4e52a568958f1e04e977be5e7ec79986, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00045-texture
+    second: {fileID: 2800000, guid: 4aeb9cdc8a175ac459994f4bb23ef37c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00046-texture
+    second: {fileID: 2800000, guid: 91d15ea90a2e6b942bc9bb2e4c16f8a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00047-texture
+    second: {fileID: 2800000, guid: 6340310ca0b061940a6a3d15e9e27627, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00048-texture
+    second: {fileID: 2800000, guid: ba76c2e71f81fab47a609af611a1f7b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00049-texture
+    second: {fileID: 2800000, guid: d0b3d1949f230724fb24fae70ffe936d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00050-texture
+    second: {fileID: 2800000, guid: 2bf149cb2f5ff3146b7bef951f870c33, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00051-texture
+    second: {fileID: 2800000, guid: bb7200b0339a337448a0b973d7d88c8f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00052-texture
+    second: {fileID: 2800000, guid: 79d3f5c386c8292429035684c08bcd14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00053-texture
+    second: {fileID: 2800000, guid: 9e2b5ccfccdd14446bbff8af5a83def0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00054-texture
+    second: {fileID: 2800000, guid: 60d9c47a5b26cbc45a963ba9cb6ab3f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00055-texture
+    second: {fileID: 2800000, guid: d234f856e6d99aa4a817a2cb07d266f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00056-texture
+    second: {fileID: 2800000, guid: 68c5583261953564daf208775da37d7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00057-texture
+    second: {fileID: 2800000, guid: 05fa08c84d4a09947a46f8b2b1f50e9e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00058-texture
+    second: {fileID: 2800000, guid: c5f2f007060611343a5c92561d53eb88, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00059-texture
+    second: {fileID: 2800000, guid: e16d054f41584e446a7b6957eb324813, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00060-texture
+    second: {fileID: 2800000, guid: e447f25bdc99aa644ac297c92c3d5974, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00061-texture
+    second: {fileID: 2800000, guid: d6275e677ed4d7945a194b77936385ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00062-texture
+    second: {fileID: 2800000, guid: 0267e50f0dd6acf4394a9855a862bf95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00063-texture
+    second: {fileID: 2800000, guid: c0bd7d56a78f30045b0f1bc56895b0ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00064-texture
+    second: {fileID: 2800000, guid: 81b2508d6d7e4f441b93cbaad53863b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00065-texture
+    second: {fileID: 2800000, guid: 1dc6dc1919183044dbbf455ac448710e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00066-texture
+    second: {fileID: 2800000, guid: 8c62ca11c4107114c8945646b1356a9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00067-texture
+    second: {fileID: 2800000, guid: bb76b1635b85e8b44a6183bb871e960f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00068-texture
+    second: {fileID: 2800000, guid: 11b07afca5dcec3478a8677d637153cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00069-texture
+    second: {fileID: 2800000, guid: 5ecc9c9f1630c6c48bc59691e3bc8326, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00070-texture
+    second: {fileID: 2800000, guid: ad0003482e3da2847b52684f40948f24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00071-texture
+    second: {fileID: 2800000, guid: a6dbe6055c7364f44bf710fa98b6f712, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00072-texture
+    second: {fileID: 2800000, guid: 43bac9d4b3f1f2e49924c78d1359bb37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00073-texture
+    second: {fileID: 2800000, guid: 2e723bddce81ed2439f2e0b772759f5c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00074-texture
+    second: {fileID: 2800000, guid: e4b6b374de90f574fa45c742a385221a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00075-texture
+    second: {fileID: 2800000, guid: b8aa2f0f684e59a4fb8547b8a55fb9dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00076-texture
+    second: {fileID: 2800000, guid: 0fca51661ec6fbd4aa96f7e49c0f52f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00077-texture
+    second: {fileID: 2800000, guid: c3ac6ae742aa3804ebf61f40f8dec738, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00078-texture
+    second: {fileID: 2800000, guid: ca118db99f176be4188a2817be171ef1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00079-texture
+    second: {fileID: 2800000, guid: 6dd04d2df81499b41a5a59d92b8abe97, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00080-texture
+    second: {fileID: 2800000, guid: 7a5ac68bd4fe2534ea3be69f0b2b1a27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00081-texture
+    second: {fileID: 2800000, guid: 469edf0216a6aff4ebc9db068138d50e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00082-texture
+    second: {fileID: 2800000, guid: e6fd98c1bee2ce24eb2aab78192809c9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00083-texture
+    second: {fileID: 2800000, guid: 9bab4fd5672b5034f837b51d8fd2865c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00084-texture
+    second: {fileID: 2800000, guid: 91733a320651a2d4ebaf1c532226d91b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00085-texture
+    second: {fileID: 2800000, guid: f60f8d53ed9695549845429b7688752b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00086-texture
+    second: {fileID: 2800000, guid: 801a688afd0206e4c9e47c75567841cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00087-texture
+    second: {fileID: 2800000, guid: 599a052c8a0259743a86d28b4e4f52ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00088-texture
+    second: {fileID: 2800000, guid: 76810e1a06a33784a9bcfc9990988027, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00089-texture
+    second: {fileID: 2800000, guid: a0ad3d11083715c4499879aba254d627, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00090-texture
+    second: {fileID: 2800000, guid: 552d024d4efc1094095b2bbd3708fafd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00091-texture
+    second: {fileID: 2800000, guid: 8b94d9a4517043e46a1af15e770380b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00092-texture
+    second: {fileID: 2800000, guid: 96c285e63a1b50e469bd1fc0a1325db2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00093-texture
+    second: {fileID: 2800000, guid: db5b403e689137c4696ee9695595cd96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00094-texture
+    second: {fileID: 2800000, guid: e693f2813058b974fa36bd42a7eb8bf7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00095-texture
+    second: {fileID: 2800000, guid: 16c2958d940043944b591454bbb21192, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00096-texture
+    second: {fileID: 2800000, guid: c04f1edc46f7c0b40be850d47ab96cb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00097-texture
+    second: {fileID: 2800000, guid: 8d9e7643b898d6b4db6c4e2fe2ee21e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00098-texture
+    second: {fileID: 2800000, guid: fc4e3ffae127b864d84264fb618e1593, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00099-texture
+    second: {fileID: 2800000, guid: eaff62a1d8d68a5409e771cabdf9428e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00100-texture
+    second: {fileID: 2800000, guid: 783f4d7424f45314aa4c1c2aebe5a979, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00101-texture
+    second: {fileID: 2800000, guid: 5bf9ac4d8173cb94085e102f488298b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00102-texture
+    second: {fileID: 2800000, guid: 4c34391ba07c61743ad2ba3846fdd2df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00103-texture
+    second: {fileID: 2800000, guid: 5eb2cd998bea7c14d96c5dce1551a818, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00104-texture
+    second: {fileID: 2800000, guid: e9ba4068b75b32442b6845abf842a4d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00105-texture
+    second: {fileID: 2800000, guid: 34eabc6afc64e7d4e8eaacf41f10f6a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00106-texture
+    second: {fileID: 2800000, guid: bd649e507d436b44e918e0acb3f57297, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00107-texture
+    second: {fileID: 2800000, guid: cabee5c569f31ae4b92668bd70663bba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00108-texture
+    second: {fileID: 2800000, guid: 64d8c08024c92214e819d260c1f3b3bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00109-texture
+    second: {fileID: 2800000, guid: ed64e1751e52a0541a92551d485092b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00110-texture
+    second: {fileID: 2800000, guid: 964f1a11bdee85f47bd0d907322eb33c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00111-texture
+    second: {fileID: 2800000, guid: 1fac6247f8c855f43bbfea3f33f6d286, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00112-texture
+    second: {fileID: 2800000, guid: 384f10a59f30a6a48a1509c4c0ee019c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00113-texture
+    second: {fileID: 2800000, guid: ba29e8548b153c847b989fc3d180800e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00114-texture
+    second: {fileID: 2800000, guid: 63f95090d39961d42ad49519c6b7e31c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00115-texture
+    second: {fileID: 2800000, guid: b974541f7d2aa9c4eb4dfe6b0b8640d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00116-texture
+    second: {fileID: 2800000, guid: 786b16310a1e25243aac49d2ab53ba03, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00117-texture
+    second: {fileID: 2800000, guid: 43c7f561d7faa5b4a89e1466a657898b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00118-texture
+    second: {fileID: 2800000, guid: f295940c891672849a3cfbc130e8eecb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00119-texture
+    second: {fileID: 2800000, guid: 5970b30dc1939634b8ed07ec399a398d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00120-texture
+    second: {fileID: 2800000, guid: 1b52f42a9b86f7a44956a77a7e1b21ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00121-texture
+    second: {fileID: 2800000, guid: b0bf861c5b1538e46ae6303d0f115d4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00122-texture
+    second: {fileID: 2800000, guid: b5692b74f9ac4da4c9c77260f7072d0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00123-texture
+    second: {fileID: 2800000, guid: e98b6a293b0734445b3b009b06c585d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00124-texture
+    second: {fileID: 2800000, guid: eb4c5287c9b9df34bb3ffcfd755dc720, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00125-texture
+    second: {fileID: 2800000, guid: aedd4005e8633614190937d7616a778e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00126-texture
+    second: {fileID: 2800000, guid: 35ac6afdb7e87b949afc61e994cd734e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00127-texture
+    second: {fileID: 2800000, guid: 716464df47051e24fbf1b0b21744c5cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00128-texture
+    second: {fileID: 2800000, guid: 2bdd69542f91b584fa7462d5d643f00b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00129-texture
+    second: {fileID: 2800000, guid: 807974a8348673e4db1be7e813968838, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00130-texture
+    second: {fileID: 2800000, guid: 41f3d855f8685ab478acf9d9d40bd75d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00131-texture
+    second: {fileID: 2800000, guid: a888b8b12e09b5f4a9019953e0edbe6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00132-texture
+    second: {fileID: 2800000, guid: 8b68ff7cff09b43469e81653f6f1807b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00133-texture
+    second: {fileID: 2800000, guid: 870afdbbf43549d49a5737685400ab4f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00134-texture
+    second: {fileID: 2800000, guid: 7bf326588a21c3f4db8a7f299188c1bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00135-texture
+    second: {fileID: 2800000, guid: 2b6184793ae21f94098550e0fd918b93, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00136-texture
+    second: {fileID: 2800000, guid: aca653f506ab1c1478074f85d48f5f1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00137-texture
+    second: {fileID: 2800000, guid: 4568cb0bd20889145a37855ba090afd8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00138-texture
+    second: {fileID: 2800000, guid: 457590eac04acac4cb8e7d41e5bca77d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00139-texture
+    second: {fileID: 2800000, guid: 6823b88521e8941428dabc73aaf089c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00140-texture
+    second: {fileID: 2800000, guid: 488223c1965cda042bc549cf26f75a78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00141-texture
+    second: {fileID: 2800000, guid: d469d2ab6f64cef46b10a65b9597e1f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00142-texture
+    second: {fileID: 2800000, guid: 1f242c78f041c1145930c70bfa8cdbcd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00143-texture
+    second: {fileID: 2800000, guid: 9e05abbbb0e738c4fb757872825d58eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00144-texture
+    second: {fileID: 2800000, guid: fe1758a54b7ce6d428aba99e6984bbf7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00145-texture
+    second: {fileID: 2800000, guid: 3bdcc5ca70176b8499d71810515ac674, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00146-texture
+    second: {fileID: 2800000, guid: 6531c5411c0ca1a40b525c8af589e100, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00147-texture
+    second: {fileID: 2800000, guid: 55645789cb9b0974a9d1570edf57891e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00148-texture
+    second: {fileID: 2800000, guid: 98df1cb1117613d48a6e41569f552093, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00149-texture
+    second: {fileID: 2800000, guid: 5df0431f7f6bf6e45903a6b0fd2053b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00150-texture
+    second: {fileID: 2800000, guid: 93d0165b8076ce44a9053300bbcb0e48, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00151-texture
+    second: {fileID: 2800000, guid: 97891289f894be84194bb9569c566bb8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00152-texture
+    second: {fileID: 2800000, guid: 9a290b4b3d5259442907d55b802ced27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00153-texture
+    second: {fileID: 2800000, guid: eda57fb2b01545b47b8a3321e7981694, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00154-texture
+    second: {fileID: 2800000, guid: 1d52a9ac6d3b4124eac7c2f4697661a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00155-texture
+    second: {fileID: 2800000, guid: 4df9b2281c440bc40a0e6de7bab37af3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00156-texture
+    second: {fileID: 2800000, guid: 27fca27dfde9db242a2b15af7eeb5535, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00157-texture
+    second: {fileID: 2800000, guid: b75a38f4af3fdef40969c4721eea7e81, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00158-texture
+    second: {fileID: 2800000, guid: 56843556e57d82444aa219cc71b1537b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00159-texture
+    second: {fileID: 2800000, guid: b403a9abf1c0e6b4b8972a5501488d8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00160-texture
+    second: {fileID: 2800000, guid: d4bf22cbb1d223e4496da97e79263286, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00161-texture
+    second: {fileID: 2800000, guid: 115a9a9ddfc422c4683189c9b9b0d0ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00162-texture
+    second: {fileID: 2800000, guid: e674ce5ce2c0fde48b8576c6f10d9e99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00163-texture
+    second: {fileID: 2800000, guid: f184331407ea34c49be5eb62b3e23f3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00164-texture
+    second: {fileID: 2800000, guid: d26cc4ea54caa2641ac467ca7ca55453, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00165-texture
+    second: {fileID: 2800000, guid: 66a9571bea25e0b4ca4e19f53a4a6a58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00166-texture
+    second: {fileID: 2800000, guid: ac493baaeedf62f4189828b441839dac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00167-texture
+    second: {fileID: 2800000, guid: 6357a98bfc16f8c44a1f3573b892dbe0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00168-texture
+    second: {fileID: 2800000, guid: 671c31a2af9f3de4486b6947c811d114, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00169-texture
+    second: {fileID: 2800000, guid: 6ed1934406070e64eb2bccd3edf2930c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00170-texture
+    second: {fileID: 2800000, guid: 8f761ae922472eb4fbed4e33ad852efa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00171-texture
+    second: {fileID: 2800000, guid: 268ab34d54cc6ff42b0c1d145a7c2f59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00172-texture
+    second: {fileID: 2800000, guid: e8c417207e85a7b478faf53a9fb73f85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00173-texture
+    second: {fileID: 2800000, guid: 15710144231f263498de68872c9dc9bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00174-texture
+    second: {fileID: 2800000, guid: 01d9c830960e18b4c88c1d80476828b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00175-texture
+    second: {fileID: 2800000, guid: e2455a8d3aefa77479e688d1e1167a0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00176-texture
+    second: {fileID: 2800000, guid: 232266a28659b8d4ea4d1bbda48eb8ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00177-texture
+    second: {fileID: 2800000, guid: 255723f2d3b67454c84d3fd24b2586fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00178-texture
+    second: {fileID: 2800000, guid: fe40b2c06d3a77a44bb64d7111510461, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00179-texture
+    second: {fileID: 2800000, guid: 1f1bc6ffdb40e98418d8b167e9296edc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00180-texture
+    second: {fileID: 2800000, guid: 42b0f382784cc2547a72db47371d8dc9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00181-texture
+    second: {fileID: 2800000, guid: 786470cc84a64d84981001027853228d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00182-texture
+    second: {fileID: 2800000, guid: 64db3a4b18e054a4498d712aeb4251b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00183-texture
+    second: {fileID: 2800000, guid: 42fe7ed55f7d1f8479447f8b5f76df37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00184-texture
+    second: {fileID: 2800000, guid: bb85f4059eafdb7498284c5684672bdb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00185-texture
+    second: {fileID: 2800000, guid: 5c3948fab1c352a44a27a4c710819f4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00186-texture
+    second: {fileID: 2800000, guid: e8a5566e5874a0c4fad99bd85bbee339, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00187-texture
+    second: {fileID: 2800000, guid: 4689eca557c5bff4fbb2be53fcc4cc13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00188-texture
+    second: {fileID: 2800000, guid: aebc42142e6e8544fbf4e622ff1a361c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00189-texture
+    second: {fileID: 2800000, guid: cd676dae2ccbee54d899742eaf9456b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00190-texture
+    second: {fileID: 2800000, guid: 547b5ecdcfee7c9478beba4dae47a879, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00191-texture
+    second: {fileID: 2800000, guid: dd2488fad8421da44a1887c90085de68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00192-texture
+    second: {fileID: 2800000, guid: 92ae6d9d80f5f2f47bb0f94ff287e0dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00193-texture
+    second: {fileID: 2800000, guid: 6697cfd9c60421e479cfef2c13a76132, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00194-texture
+    second: {fileID: 2800000, guid: af0bf3cab86cca142bee3bb8d9686517, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00195-texture
+    second: {fileID: 2800000, guid: bd22fb80c46509341baea5e12626dcff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00196-texture
+    second: {fileID: 2800000, guid: 0cad6672c7ab0f140ba98137c84d7821, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00197-texture
+    second: {fileID: 2800000, guid: 6697935bdc5c3fd4abca9e28b4073120, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00198-texture
+    second: {fileID: 2800000, guid: 5a0867b528f654342b7c12c356a96164, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: laguna-00199-texture
+    second: {fileID: 2800000, guid: 8b83c8977ab2a9940bfb46ad3ca086c2, type: 3}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
