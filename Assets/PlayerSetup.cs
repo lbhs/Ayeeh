@@ -12,7 +12,7 @@ public class PlayerSetup : MonoBehaviour
         PV = GetComponent<PhotonView>();
         if (!PV.IsMine)
             return;
-        PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10)), Quaternion.identity);
+        PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-10, 10), 0.5f, Random.Range(-10, 10)), Quaternion.identity);
 
     }
 

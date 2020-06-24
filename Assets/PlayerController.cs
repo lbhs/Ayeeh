@@ -123,10 +123,11 @@ public class PlayerController : MonoBehaviour
                 }
                 if (EM.countOfCurrentElectrons > 0)
                 {
-                    Vector3 EPos = EM.RemoveElectron();
+                    //Vector3 EPos = EM.RemoveElectron();
                     if (PV.IsMine)
                     {
-                        PhotonNetwork.Instantiate("Electron", EPos, Quaternion.identity);
+                        PhotonNetwork.Instantiate("Electron", gameObject.transform.position, Quaternion.identity);
+                        EM.subtract();
                     }
                 }
             }

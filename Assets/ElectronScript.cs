@@ -44,6 +44,7 @@ public class ElectronScript : MonoBehaviour
             {
                 GetComponent<MeshRenderer>().enabled = false;
                 trigger.enabled = false;
+               
                 if (PV.IsMine)
                 {
                     otherEM.add();
@@ -52,11 +53,20 @@ public class ElectronScript : MonoBehaviour
             }
         }
     }
+    int wait = 0;
      IEnumerator selfDesctruct()
     {
-        yield return new WaitForSeconds(10);
-        PhotonNetwork.Destroy(gameObject);
-        print("kaboom");
+        if (wait == 0)
+        {
+            yield return new WaitForSeconds(0.01f);
+            wait++;
+        }
+        else
+        {
+            yield return new WaitForSeconds(10);
+            PhotonNetwork.Destroy(gameObject);
+            print("kaboom");
+        }
     }
     
 }

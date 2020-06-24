@@ -7,7 +7,7 @@ public class ElectronManager : MonoBehaviour
 {
     public List<GameObject> E = new List<GameObject>();
     public float changeRate = 0.1f;
-    [HideInInspector]
+    //[HideInInspector]
     public int countOfCurrentElectrons;
     private PhotonView PV;
     // Start is called before the first frame update
@@ -19,12 +19,51 @@ public class ElectronManager : MonoBehaviour
             countOfCurrentElectrons++;
             item.GetComponent<Rigidbody>().angularVelocity = new Vector3(Random.Range(0.1f,15f), Random.Range(0.1f, 10f), Random.Range(0.1f, 10f));
         }
+        previousECount = countOfCurrentElectrons;
         StartCoroutine(Change());
+    }
+
+    int previousECount = 0;
+    private void Update()
+    {
+        if(previousECount > countOfCurrentElectrons)
+        {
+            RemoveElectron();
+            previousECount--;
+        }
+        else if(previousECount < countOfCurrentElectrons)
+        {
+            AddElectron();
+            previousECount++;
+        }
+
+    }
+
+    public void add()
+    {
+        PV.RPC("addRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void addRPC()
+    {
+        countOfCurrentElectrons++;
+    }
+
+    public void subtract()
+    {
+        PV.RPC("subtractRPC", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void subtractRPC()
+    {
+        countOfCurrentElectrons--;
     }
 
     public Vector3 RemoveElectron()
     {
-        countOfCurrentElectrons--;
+        //countOfCurrentElectrons--;
         List<GameObject> CurrentE = new List<GameObject>();
         foreach (var item in E)
         {
@@ -37,16 +76,10 @@ public class ElectronManager : MonoBehaviour
         print("removed");
         return CurrentE[CurrentE.Count - 1].transform.position;
     }
-    
-    public void add()
-    {
-        PV.RPC("AddElectron", RpcTarget.All);
-    }
-
-    [PunRPC]
+   
     public void AddElectron()
     {
-        countOfCurrentElectrons++;
+        //countOfCurrentElectrons++;
         List<GameObject> DisabledE = new List<GameObject>();
         foreach (var item in E)
         {
