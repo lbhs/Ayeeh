@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bullet
+  m_Name: Bullet2
   m_Shader: {fileID: -6465566751694194690, guid: 4463b6361b745ac499574fc74974042e,
     type: 3}
   m_ShaderKeywords: 
@@ -87,8 +87,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_15E34D04: {r: 0, g: 0.9019608, b: 2, a: 0}
-    - Color_19DD128E: {r: 0, g: 0.4803448, b: 1, a: 0}
+    - Color_15E34D04: {r: 1.0050259, g: 0, b: 2, a: 0}
+    - Color_19DD128E: {r: 0.4192195, g: 0, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

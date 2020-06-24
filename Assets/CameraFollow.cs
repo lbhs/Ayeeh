@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraFollow : MonoBehaviour {
     
 	public GameObject CameraFollowObj;
     public float yaw = 0;
     public float pitch = 0;
+    public Animator LightningAnim;
+    public Text ElectronCountText;
 
     private void Update()
     {
