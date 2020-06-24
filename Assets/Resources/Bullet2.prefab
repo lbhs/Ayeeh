@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 6280298313190168154}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Bullet
+  m_TagString: Bullet2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5229d4cb2e706f043b25643806cf53d9, type: 3}
   - {fileID: 8300000, guid: a9aa10ae656c01845afc67eb05227590, type: 3}
   PV: {fileID: 2765988103227412487}
+  PurpleParticles: 1
 --- !u!54 &5532965363150984647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -371,7 +372,7 @@ GameObject:
   - component: {fileID: 5532965363394557109}
   m_Layer: 0
   m_Name: Bullet2
-  m_TagString: Bullet
+  m_TagString: Bullet2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

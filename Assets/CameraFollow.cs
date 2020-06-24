@@ -32,5 +32,7 @@ public class CameraFollow : MonoBehaviour {
         }
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0);
+
+        ElectronCountText.text = CameraFollowObj.transform.root.GetComponent<PlayerController>().EM.countOfCurrentElectrons.ToString();
     }
 }

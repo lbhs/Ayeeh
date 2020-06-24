@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class ElectronManager : MonoBehaviour
 {
@@ -8,9 +9,11 @@ public class ElectronManager : MonoBehaviour
     public float changeRate = 0.1f;
     [HideInInspector]
     public int countOfCurrentElectrons;
+    private PhotonView PV;
     // Start is called before the first frame update
     void Start()
     {
+        PV = GetComponent<PhotonView>();
         foreach (var item in E)
         {
             countOfCurrentElectrons++;
@@ -34,8 +37,14 @@ public class ElectronManager : MonoBehaviour
         print("removed");
         return CurrentE[CurrentE.Count - 1].transform.position;
     }
+    
+    public void add()
+    {
+        PV.RPC("AddElectron", RpcTarget.All);
+    }
 
-    public Vector3 AddElectron()
+    [PunRPC]
+    public void AddElectron()
     {
         countOfCurrentElectrons++;
         List<GameObject> DisabledE = new List<GameObject>();
@@ -49,7 +58,7 @@ public class ElectronManager : MonoBehaviour
         DisabledE[0].SetActive(true);
         GetComponent<AudioSource>().Play();
         print("added");
-        return DisabledE[0].transform.position;
+        //return DisabledE[0].transform.position;
     }
     
     IEnumerator Change()

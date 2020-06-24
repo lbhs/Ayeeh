@@ -30,7 +30,7 @@ public class ElectronScript : MonoBehaviour
 
     IEnumerator Launch()
     {
-        yield return new WaitForSeconds(00.1f);
+        yield return new WaitForSeconds(0.2f);
         colider.enabled = true;
         trigger.enabled = true;
     }
@@ -42,8 +42,21 @@ public class ElectronScript : MonoBehaviour
             ElectronManager otherEM = other.gameObject.transform.GetChild(2).GetComponent<ElectronManager>();
             if (otherEM.countOfCurrentElectrons < otherEM.E.Count)
             {
-                Destroy(gameObject);
+                GetComponent<MeshRenderer>().enabled = false;
+                trigger.enabled = false;
+                if (PV.IsMine)
+                {
+                    otherEM.add();
+                    StartCoroutine(selfDesctruct());
+                }
             }
         }
     }
+     IEnumerator selfDesctruct()
+    {
+        yield return new WaitForSeconds(10);
+        PhotonNetwork.Destroy(gameObject);
+        print("kaboom");
+    }
+    
 }

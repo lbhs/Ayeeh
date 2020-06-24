@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
     {
 
         //print("enter");
-        if (collision.tag == "Bullet")
+        if (collision.tag == "Bullet" || collision.tag == "Bullet2")
         {
             //print("I got hit?");
             if (PV.Owner != collision.GetComponent<PhotonView>().Owner)
@@ -112,7 +112,14 @@ public class PlayerController : MonoBehaviour
                 if (PV.IsMine)
                 {
                     CameraShaker.Instance.ShakeOnce(3, 2, 0.1f, 0.2f);
-                    PhotonNetwork.Instantiate("HitParticle", collision.transform.position, Quaternion.identity);
+                    if (collision.tag == "Bullet")
+                    {
+                        PhotonNetwork.Instantiate("HitParticle", collision.transform.position, Quaternion.identity);
+                    }
+                    else
+                    {
+                        PhotonNetwork.Instantiate("HitParticle4", collision.transform.position, Quaternion.identity);
+                    }
                 }
                 if (EM.countOfCurrentElectrons > 0)
                 {

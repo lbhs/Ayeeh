@@ -198,6 +198,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5229d4cb2e706f043b25643806cf53d9, type: 3}
   - {fileID: 8300000, guid: a9aa10ae656c01845afc67eb05227590, type: 3}
   PV: {fileID: 2765988103227412487}
+  PurpleParticles: 0
 --- !u!54 &5532965363150984647
 Rigidbody:
   m_ObjectHideFlags: 0

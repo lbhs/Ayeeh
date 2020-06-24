@@ -12,6 +12,8 @@ public class BulletScript : MonoBehaviour
     public AudioSource AS;
     public AudioClip[] ac;
     public PhotonView PV;
+    public bool PurpleParticles = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!PV.IsMine)
@@ -27,7 +29,14 @@ public class BulletScript : MonoBehaviour
             GetComponent<Collider>().enabled = false;
             if (PV.IsMine)
             {
-                PhotonNetwork.Instantiate("HitParticle2", transform.position, Quaternion.identity);
+                if (PurpleParticles == false)
+                {
+                    PhotonNetwork.Instantiate("HitParticle2", transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    PhotonNetwork.Instantiate("HitParticle3", transform.position, Quaternion.identity);
+                }
             }
             //PhotonNetwork.Destroy(transform.root.gameObject);
         }
