@@ -489,6 +489,8 @@ MonoBehaviour:
   gravityScale: 0.0025
   PV: {fileID: 4397699241249907296}
   EM: {fileID: 1443774197502005919}
+  CanBullet1: 0
+  CanBullet2: 0
 --- !u!143 &7036018041307512598
 CharacterController:
   m_ObjectHideFlags: 0

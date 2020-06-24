@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public float gravityScale = 0.0025f;
     public PhotonView PV;
     public ElectronManager EM;
+    public bool CanBullet1 = false;
+    public bool CanBullet2 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class PlayerController : MonoBehaviour
         Camera.GetComponent<CameraFollow>().CameraFollowObj = transform.GetChild(0).gameObject;
         rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
+        co.Add(StartCoroutine(check()));
     }
 
     // Update is called once per frame
@@ -66,8 +69,34 @@ public class PlayerController : MonoBehaviour
                 //Debug.Log(hit.point);
                 if (!Input.GetKey(KeyCode.Mouse1))
                 {
-                    GameObject b = PhotonNetwork.Instantiate("Bullet", transform.position, Quaternion.identity);
-                    b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
+                    if (CanBullet1 == true && CanBullet2 == false)
+                    {
+                        GameObject b = PhotonNetwork.Instantiate("Bullet", transform.position, Quaternion.identity);
+                        b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
+
+                        Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Down");
+                        CanBullet1 = false;
+                        CanBullet2 = false;
+                        foreach (var item in co)
+                        {
+                            StopCoroutine(item);
+                        }
+                        co.Add(StartCoroutine(check()));
+                    }
+                    else if (CanBullet2 == true)
+                    {
+                        GameObject b = PhotonNetwork.Instantiate("Bullet2", transform.position, Quaternion.identity);
+                        b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
+
+                        Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Down");
+                        CanBullet1 = false;
+                        CanBullet2 = false;
+                        foreach (var item in co)
+                        {
+                            StopCoroutine(item);
+                        }
+                        co.Add(StartCoroutine(check()));
+                    }
                     //PV.RPC("RPCBulletVars", RpcTarget.All, b, gameObject, hit.point);
                     //b.transform.GetChild(0).GetComponent<BulletScript>().owner = gameObject;
                     //b.transform.GetChild(0).GetComponent<BulletScript>().lookPoint = hit.point;
@@ -77,7 +106,14 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
+    public List<Coroutine> co = new List<Coroutine>();
+    IEnumerator check()
+    {
+        yield return new WaitForSeconds(0.2f);
+        CanBullet1 = true;
+        yield return new WaitForSeconds(1.6f);
+        CanBullet2 = true;
+    }
     /*[PunRPC]
     private void RPCBulletVars(GameObject b, GameObject owner, Vector3 hitPoint)
     {
