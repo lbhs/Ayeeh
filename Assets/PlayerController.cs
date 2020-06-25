@@ -109,9 +109,9 @@ public class PlayerController : MonoBehaviour
     public List<Coroutine> co = new List<Coroutine>();
     IEnumerator check()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         CanBullet1 = true;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.6f);
         CanBullet2 = true;
     }
     /*[PunRPC]
