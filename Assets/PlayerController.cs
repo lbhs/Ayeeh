@@ -157,7 +157,16 @@ public class PlayerController : MonoBehaviour
                         PhotonNetwork.Instantiate("HitParticle4", collision.transform.position, Quaternion.identity);
                     }
                 }
-                if (EM.countOfCurrentElectrons > 0)
+                if (EM.countOfCurrentElectrons > 2)
+                {
+                    //Vector3 EPos = EM.RemoveElectron();
+                    if (PV.IsMine)
+                    {
+                        PhotonNetwork.Instantiate("Electron", gameObject.transform.position, Quaternion.identity);
+                        EM.subtract();
+                    }
+                }
+                else if(EM.countOfCurrentElectrons <= 2 && EM.countOfCurrentElectrons >0 && collision.tag == "Bullet2")
                 {
                     //Vector3 EPos = EM.RemoveElectron();
                     if (PV.IsMine)
