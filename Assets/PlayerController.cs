@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         CanBullet1 = true;
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(1.5f);
         CanBullet2 = true;
     }
     /*[PunRPC]
