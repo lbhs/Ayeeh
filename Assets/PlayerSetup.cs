@@ -6,21 +6,51 @@ using Photon.Pun;
 public class PlayerSetup : MonoBehaviour
 {
     public PhotonView PV;
+    public GameObject PlayerAtom;
+    public int teamNumber;
     // Start is called before the first frame update
     void Start()
     {
         PV = GetComponent<PhotonView>();
-        if (!PV.IsMine)
-            return;
-        PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(-10, 10), 0.5f, Random.Range(-10, 10)), Quaternion.identity);
-
+        if (PV.IsMine)
+        {
+            PV.RPC("GetTeamRPC", RpcTarget.MasterClient);
+        }
+        
     }
-
-    // Update is called once per frame
     void Update()
     {
-
-        if (!PV.IsMine)
-            return;
+        if (PlayerAtom == null && teamNumber != 0)
+        {
+            if (teamNumber == 1)
+            {
+                int spawnpicker = Random.Range(0, GameSetupContrller.GS.spawnPointsTeamOne.Length);
+                if (PV.IsMine)
+                {
+                    PlayerAtom = PhotonNetwork.Instantiate("Player", GameSetupContrller.GS.spawnPointsTeamOne[spawnpicker].position, GameSetupContrller.GS.spawnPointsTeamOne[spawnpicker].rotation);
+                }
+            }
+            else
+            {
+                int spawnpicker = Random.Range(0, GameSetupContrller.GS.spawnPointsTeamTwo.Length);
+                if (PV.IsMine)
+                {
+                    PlayerAtom = PhotonNetwork.Instantiate("Player", GameSetupContrller.GS.spawnPointsTeamTwo[spawnpicker].position, GameSetupContrller.GS.spawnPointsTeamTwo[spawnpicker].rotation);
+                }
+            }
+        }
     }
+    [PunRPC]
+    void GetTeamRPC()
+    {
+        teamNumber = GameSetupContrller.GS.NextPlayersTeam;
+        GameSetupContrller.GS.UpdateTeam();
+        PV.RPC("SendTeamRPC", RpcTarget.OthersBuffered, teamNumber);
+    }
+    [PunRPC]
+    void SendTeamRPC(int TeamNum)
+    {
+        teamNumber = TeamNum;
+    }
+
 }

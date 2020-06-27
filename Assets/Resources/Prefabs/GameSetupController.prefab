@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27192b403bec1eb44ab99e290a4dda51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextPlayersTeam: 1
+  spawnPointsTeamOne: []
+  spawnPointsTeamTwo: []

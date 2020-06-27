@@ -9,6 +9,20 @@ public class GameSetupContrller : MonoBehaviour
 { 
     private PhotonView PV;
 
+    public int NextPlayersTeam;
+    public Transform[] spawnPointsTeamOne;
+    public Transform[] spawnPointsTeamTwo;
+
+    public static GameSetupContrller GS;
+
+    private void OnEnable()
+    {
+        if(GameSetupContrller.GS == null)
+        {
+            GameSetupContrller.GS = this;
+        }
+    }
+
     private void Awake()
     {
         CreatePlayer();
@@ -40,4 +54,15 @@ public class GameSetupContrller : MonoBehaviour
         GO.GetComponent<PhotonView>().RequestOwnership();
     }
     
+    public void UpdateTeam()
+    {
+        if (NextPlayersTeam == 1)
+        {
+            NextPlayersTeam = 2;
+        }
+        else
+        {
+            NextPlayersTeam = 1;
+        }
+    }
 }

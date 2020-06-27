@@ -16,7 +16,10 @@ public class ElectronManager : MonoBehaviour
         PV = GetComponent<PhotonView>();
         foreach (var item in E)
         {
-            countOfCurrentElectrons++;
+            if (item.activeSelf == true)
+            {
+                countOfCurrentElectrons++;
+            }
             item.GetComponent<Rigidbody>().angularVelocity = new Vector3(Random.Range(0.1f,15f), Random.Range(0.1f, 10f), Random.Range(0.1f, 10f));
         }
         previousECount = countOfCurrentElectrons;
@@ -26,6 +29,16 @@ public class ElectronManager : MonoBehaviour
     int previousECount = 0;
     private void Update()
     {
+        //TEMPORYFIX!!!!!!!!!!
+        if(countOfCurrentElectrons > E.Count)
+        {
+            countOfCurrentElectrons = E.Count;
+        }
+        else if(countOfCurrentElectrons < 0)
+        {
+            countOfCurrentElectrons = 0;
+        }
+        //TEMPORYFIX!!!!!!!
         if(previousECount > countOfCurrentElectrons)
         {
             RemoveElectron();
@@ -36,7 +49,6 @@ public class ElectronManager : MonoBehaviour
             AddElectron();
             previousECount++;
         }
-
     }
 
     public void add()
