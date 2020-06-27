@@ -11,6 +11,9 @@ public class LightningScript : MonoBehaviour
     public int numOfPoints;
     public int CurrentNumOfPoints;
     private Vector2 resolution;
+    private List<float> yValues = new List<float>();
+    private float intervals;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +33,43 @@ public class LightningScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            mask.transform.position = mask.transform.position - Vector3.up *20;
-            image.transform.position = image.transform.position + Vector3.up * 20;
+            MoveUp();
+        }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            MoveDown();
         }
     }
+
+    private void MoveUp()
+    {
+        if (CurrentNumOfPoints < numOfPoints)
+        {
+            CurrentNumOfPoints++;
+            mask.transform.position = mask.transform.position - Vector3.down * intervals;
+            image.transform.position = image.transform.position + Vector3.down * intervals;
+        }
+    }
+
+    private void MoveDown()
+    {
+        if (CurrentNumOfPoints > 0)
+        {
+            CurrentNumOfPoints--;
+            mask.transform.position = mask.transform.position - Vector3.up * intervals;
+            image.transform.position = image.transform.position + Vector3.up * intervals;
+        }
+    }
+
     private void CaculatePoints()
     {
-
+        yValues.Clear();
+        float distance = PointOne.transform.position.y - PointTwo.transform.position.y;
+        intervals = distance / numOfPoints;
+        yValues.Add(PointTwo.transform.position.y + intervals);
+        for (int i = 1; i < numOfPoints; i++)
+        {
+            yValues.Add(yValues[yValues.Count - 1] + intervals);
+        }
     }
 }
