@@ -28,6 +28,7 @@ public class PlayerSetup : MonoBehaviour
                 if (PV.IsMine)
                 {
                     PlayerAtom = PhotonNetwork.Instantiate("Player", GameSetupContrller.GS.spawnPointsTeamOne[spawnpicker].position, GameSetupContrller.GS.spawnPointsTeamOne[spawnpicker].rotation);
+                    PlayerAtom.GetComponent<PlayerController>().SetTeam(teamNumber);
                 }
             }
             else
@@ -36,6 +37,7 @@ public class PlayerSetup : MonoBehaviour
                 if (PV.IsMine)
                 {
                     PlayerAtom = PhotonNetwork.Instantiate("Player", GameSetupContrller.GS.spawnPointsTeamTwo[spawnpicker].position, GameSetupContrller.GS.spawnPointsTeamTwo[spawnpicker].rotation);
+                    PlayerAtom.GetComponent<PlayerController>().SetTeam(teamNumber);
                 }
             }
         }

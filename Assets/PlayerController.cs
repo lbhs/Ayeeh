@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public ElectronManager EM;
     public bool CanBullet1 = false;
     public bool CanBullet2 = false;
-    public bool IsOnTeamOne;
+    public int TeamNumber;
     public Material TeamOneMaterial;
     public Material TeamTwoMaterial;
 
@@ -26,14 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         PV = GetComponent<PhotonView>();
-        if(IsOnTeamOne)
-        {
-            GetComponent<MeshRenderer>().material = TeamOneMaterial;
-        }
-        else
-        {
-            GetComponent<MeshRenderer>().material = TeamTwoMaterial;
-        }
+       
         if (!PV.IsMine)
         {
             Destroy(GetComponent<Rigidbody>());
@@ -136,6 +129,23 @@ public class PlayerController : MonoBehaviour
         //yield return new WaitForSeconds(1.6f);
         //CanBullet2 = true;
     }
+    
+    public void SetTeam(int team)
+    {
+        PV.RPC("SetTeamRPC", RpcTarget.AllBuffered, team);
+    }
+    [PunRPC]
+    void SetTeamRPC(int team)
+    {
+        if (team == 1)
+        {
+            GetComponent<MeshRenderer>().material = TeamOneMaterial;
+        }
+        else
+        {
+            GetComponent<MeshRenderer>().material = TeamTwoMaterial;
+        }
+    }
     /*[PunRPC]
     private void RPCBulletVars(GameObject b, GameObject owner, Vector3 hitPoint)
     {
@@ -143,16 +153,16 @@ public class PlayerController : MonoBehaviour
         b.transform.GetChild(0).GetComponent<BulletScript>().lookPoint = hitPoint;
     }*/
 
-   /* [PunRPC]
-    public void Hit()
-    {
-        CameraShaker.Instance.ShakeOnce(2, 2, 0.1f, 0.2f);
-    }
+    /* [PunRPC]
+     public void Hit()
+     {
+         CameraShaker.Instance.ShakeOnce(2, 2, 0.1f, 0.2f);
+     }
 
-    public void HitPlayer(GameObject player)
-    {
-        PV.RPC("Hit", player.GetComponent<PhotonView>().Owner);
-    }*/
+     public void HitPlayer(GameObject player)
+     {
+         PV.RPC("Hit", player.GetComponent<PhotonView>().Owner);
+     }*/
 
     public void GotHit(GameObject collision)
     {
