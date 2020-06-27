@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 5532965363150984642}
   - component: {fileID: 5532965363150984640}
   - component: {fileID: 5532965363150984647}
-  - component: {fileID: 2429294531123445875}
   - component: {fileID: 1029831531729859748}
   - component: {fileID: 2765988103227412487}
   - component: {fileID: 6280298313190168154}
+  - component: {fileID: 1276971099637732521}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -121,20 +121,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 4
-  m_CollisionDetection: 0
---- !u!135 &2429294531123445875
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5532965363150984645}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49999997
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CollisionDetection: 1
 --- !u!82 &1029831531729859748
 AudioSource:
   m_ObjectHideFlags: 0
@@ -268,6 +255,20 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!136 &1276971099637732521
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532965363150984645}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.7298875
+  m_Direction: 2
+  m_Center: {x: 0.0000062171057, y: 0.0000000014639596, z: -0.864947}
 --- !u!1 &5532965363394557108
 GameObject:
   m_ObjectHideFlags: 0

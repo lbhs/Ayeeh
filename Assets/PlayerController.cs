@@ -18,11 +18,22 @@ public class PlayerController : MonoBehaviour
     public ElectronManager EM;
     public bool CanBullet1 = false;
     public bool CanBullet2 = false;
+    public bool IsOnTeamOne;
+    public Material TeamOneMaterial;
+    public Material TeamTwoMaterial;
 
     // Start is called before the first frame update
     void Start()
     {
         PV = GetComponent<PhotonView>();
+        if(IsOnTeamOne)
+        {
+            GetComponent<MeshRenderer>().material = TeamOneMaterial;
+        }
+        else
+        {
+            GetComponent<MeshRenderer>().material = TeamTwoMaterial;
+        }
         if (!PV.IsMine)
         {
             Destroy(GetComponent<Rigidbody>());
@@ -70,7 +81,7 @@ public class PlayerController : MonoBehaviour
                 //Debug.Log(hit.point);
                 if (!Input.GetKey(KeyCode.Mouse1))
                 {
-                    if (CanBullet1 == true && CanBullet2 == false)
+                    if (CanBullet1 == true && !Input.GetKey(KeyCode.Space))
                     {
                         GameObject b = PhotonNetwork.Instantiate("Bullet", transform.position, Quaternion.identity);
                         b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
@@ -83,7 +94,7 @@ public class PlayerController : MonoBehaviour
                         }
                         co.Add(StartCoroutine(check()));
                     }
-                    else if (CanBullet2 == true)
+                    else if (CanBullet2 == true && Input.GetKey(KeyCode.Space))
                     {
                         GameObject b = PhotonNetwork.Instantiate("Bullet2", transform.position, Quaternion.identity);
                         b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);

@@ -9,11 +9,12 @@ public class ElectronScript : MonoBehaviour
     public Collider trigger;
     private Rigidbody rb;
     private PhotonView PV;
+    private bool pleaseDesrtoryMe = false;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(5*(Random.Range(0,2)*2-1),Random.Range(6,8),5* (Random.Range(0, 2) * 2 - 1));
+        rb.velocity = new Vector3(5*((Random.Range(0,2)*2-1)),Random.Range(6,8),5* ((Random.Range(0, 2) * 2 - 1)));
         PV = GetComponent<PhotonView>();
         StartCoroutine(Launch());
     }
@@ -21,11 +22,16 @@ public class ElectronScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pleaseDesrtoryMe)
+        {
+            PhotonNetwork.Destroy(gameObject);
+        }
         if(transform.position.y < 0)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.y);
             transform.position = new Vector3(transform.position.x, 0.1f, transform.position.y);
         }
+        //rb.velocity = new Vector3(Random.Range(-5, 5), 0, Random.Range(-5, 5));
     }
 
     IEnumerator Launch()
@@ -44,18 +50,35 @@ public class ElectronScript : MonoBehaviour
             {
                 GetComponent<MeshRenderer>().enabled = false;
                 trigger.enabled = false;
-                other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().lightningScript.MoveUp();
+                if (other.GetComponent<PlayerController>().Camera != null)
+                {
+                    other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().lightningScript.MoveUp();
+                }
                 otherEM.add();
                 if (PV.IsMine)
                 {
-                    
-                    StartCoroutine(selfDesctruct());
+                    pleaseDesrtoryMe = true;
+                    //PhotonNetwork.Destroy(gameObject);
+                    //other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().lightningScript.MoveUp();
+                    //StartCoroutine(selfDesctruct());
                 }
-                
+                else
+                {
+                    PV.RPC("SendDestroyRequest", RpcTarget.All);
+                }
             }
         }
     }
-    int wait = 0;
+
+    [PunRPC]
+    private void SendDestroyRequest()
+    {
+        if (PV.IsMine)
+        {
+            pleaseDesrtoryMe = true;
+        }
+    }
+    /*int wait = 0;
      IEnumerator selfDesctruct()
     {
         if (wait == 0)
@@ -65,10 +88,10 @@ public class ElectronScript : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(2);
             PhotonNetwork.Destroy(gameObject);
             print("kaboom");
         }
-    }
-    
+    }*/
+
 }

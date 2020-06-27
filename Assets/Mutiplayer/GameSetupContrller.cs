@@ -9,10 +9,15 @@ public class GameSetupContrller : MonoBehaviour
 { 
     private PhotonView PV;
 
-    private void Start()
+    private void Awake()
     {
         CreatePlayer();
         PV = GetComponent<PhotonView>();
+    }
+
+    private void Start()
+    {
+        print(PhotonNetwork.PlayerList[0]);
     }
 
     private void CreatePlayer()

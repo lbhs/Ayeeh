@@ -13,6 +13,7 @@ public class BulletScript : MonoBehaviour
     public AudioClip[] ac;
     public PhotonView PV;
     public bool PurpleParticles = false;
+   // public Collider colider;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -45,6 +46,7 @@ public class BulletScript : MonoBehaviour
     void Awake()
     {
         StartCoroutine(despawn());
+        //StartCoroutine(Launch());
         if (!PV.IsMine)
         {
             return;
@@ -55,7 +57,12 @@ public class BulletScript : MonoBehaviour
         //transform.LookAt(lookPoint);
         rb = GetComponent<Rigidbody>();
     }
-
+    /*IEnumerator Launch()
+    {
+        colider.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        colider.enabled = true;
+    }*/
     private void Update()
     {
         if (!PV.IsMine)
