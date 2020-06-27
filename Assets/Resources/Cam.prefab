@@ -236,6 +236,7 @@ MonoBehaviour:
   pitch: 0
   LightningAnim: {fileID: 8945377971327326282}
   ElectronCountText: {fileID: 2973783495604921858}
+  lightningScript: {fileID: 406954630253780335}
 --- !u!1 &2049572403862079821
 GameObject:
   m_ObjectHideFlags: 0

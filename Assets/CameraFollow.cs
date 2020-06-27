@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour {
     public float pitch = 0;
     public Animator LightningAnim;
     public Text ElectronCountText;
+    public LightningScript lightningScript;
 
     private void Update()
     {

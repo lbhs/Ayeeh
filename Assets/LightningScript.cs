@@ -31,33 +31,41 @@ public class LightningScript : MonoBehaviour
             resolution.y = Screen.height;
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            MoveUp();
-        }
-        if (Input.GetKeyDown(KeyCode.H))
+        /*if (Input.GetKeyDown(KeyCode.G))
         {
             MoveDown();
         }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            MoveUp();
+        }*/
     }
 
-    private void MoveUp()
+    public void MoveDown()
     {
         if (CurrentNumOfPoints < numOfPoints)
         {
             CurrentNumOfPoints++;
+            mask.transform.position = mask.transform.position - Vector3.up * intervals;
+            image.transform.position = image.transform.position + Vector3.up * intervals;
+        }
+    }
+
+    public void MoveUp()
+    {
+        if (CurrentNumOfPoints > 0)
+        {
+            CurrentNumOfPoints--;
             mask.transform.position = mask.transform.position - Vector3.down * intervals;
             image.transform.position = image.transform.position + Vector3.down * intervals;
         }
     }
 
-    private void MoveDown()
+    public void BackToZero()
     {
-        if (CurrentNumOfPoints > 0)
+        for (int i = 0; i < numOfPoints; i++)
         {
-            CurrentNumOfPoints--;
-            mask.transform.position = mask.transform.position - Vector3.up * intervals;
-            image.transform.position = image.transform.position + Vector3.up * intervals;
+            MoveDown();
         }
     }
 

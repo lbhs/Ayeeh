@@ -102,15 +102,11 @@ public class ElectronManager : MonoBehaviour
             int num = Random.Range(0, 2);
             if (num == 0)
             {
-
                 item.GetComponent<Rigidbody>().angularVelocity = new Vector3(Random.Range(0.1f, 15f), Random.Range(0.1f, 10f), Random.Range(0.1f, 10f));
-
             }
             else
             {
-
-                item.transform.rotation = Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
-
+                //item.transform.rotation = Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
             }
         }
         StartCoroutine(Change());

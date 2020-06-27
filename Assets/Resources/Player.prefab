@@ -486,6 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   cam: {fileID: 1030712848054899814, guid: 70062ddd2b2e8a14b80c3f996e52912f, type: 3}
+  Camera: {fileID: 0}
   gravityScale: 0.0025
   PV: {fileID: 4397699241249907296}
   EM: {fileID: 1443774197502005919}

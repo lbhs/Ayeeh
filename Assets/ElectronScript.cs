@@ -44,12 +44,14 @@ public class ElectronScript : MonoBehaviour
             {
                 GetComponent<MeshRenderer>().enabled = false;
                 trigger.enabled = false;
-               
+
                 if (PV.IsMine)
                 {
+                    other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().lightningScript.MoveUp();
                     otherEM.add();
-                    StartCoroutine(selfDesctruct());
                 }
+
+                StartCoroutine(selfDesctruct());
             }
         }
     }
@@ -63,9 +65,12 @@ public class ElectronScript : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(10);
-            PhotonNetwork.Destroy(gameObject);
-            print("kaboom");
+            if (PV.IsMine)
+            {
+                yield return new WaitForSeconds(10);
+                PhotonNetwork.Destroy(gameObject);
+                print("kaboom");
+            }
         }
     }
     

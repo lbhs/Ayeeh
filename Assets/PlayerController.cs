@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     public float speed = 8;
     public GameObject cam;
-    private GameObject Camera;
+    [HideInInspector]
+    public GameObject Camera;
     private CharacterController controller;
     private Vector3 targetDirection;
     public float gravityScale = 0.0025f;
@@ -73,8 +74,7 @@ public class PlayerController : MonoBehaviour
                     {
                         GameObject b = PhotonNetwork.Instantiate("Bullet", transform.position, Quaternion.identity);
                         b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
-
-                        Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Down");
+                        
                         CanBullet1 = false;
                         CanBullet2 = false;
                         foreach (var item in co)
@@ -88,7 +88,8 @@ public class PlayerController : MonoBehaviour
                         GameObject b = PhotonNetwork.Instantiate("Bullet2", transform.position, Quaternion.identity);
                         b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
 
-                        Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Down");
+                        Camera.GetComponent<CameraFollow>().lightningScript.BackToZero();
+                        Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Shake");
                         CanBullet1 = false;
                         CanBullet2 = false;
                         foreach (var item in co)
@@ -105,14 +106,24 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        if (0 == Camera.GetComponent<CameraFollow>().lightningScript.CurrentNumOfPoints)
+        {
+            CanBullet2 = true;
+        }
+        else
+        {
+            CanBullet2 = false;
+        }
     }
+
     public List<Coroutine> co = new List<Coroutine>();
     IEnumerator check()
     {
         yield return new WaitForSeconds(0.1f);
         CanBullet1 = true;
-        yield return new WaitForSeconds(1.6f);
-        CanBullet2 = true;
+        //yield return new WaitForSeconds(1.6f);
+        //CanBullet2 = true;
     }
     /*[PunRPC]
     private void RPCBulletVars(GameObject b, GameObject owner, Vector3 hitPoint)
