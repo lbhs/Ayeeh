@@ -179,7 +179,7 @@ public class PlayerController : MonoBehaviour
                 collision.GetComponent<Collider>().enabled = false;
                 if (PV.IsMine)
                 {
-                    CameraShaker.Instance.ShakeOnce(3, 2, 0.1f, 0.2f);
+                    CameraShaker.Instance.ShakeOnce(4, 2, 0.1f, 0.2f);
                     if (collision.tag == "Bullet")
                     {
                         PhotonNetwork.Instantiate("HitParticle", collision.transform.position, Quaternion.identity);
