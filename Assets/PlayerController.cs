@@ -7,7 +7,8 @@ using Photon.Pun;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
-    public float speed = 8;
+    public float speed = 16;
+    private float speedstore;
     public GameObject cam;
     [HideInInspector]
     public GameObject Camera;
@@ -21,12 +22,15 @@ public class PlayerController : MonoBehaviour
     public int TeamNumber;
     public Material TeamOneMaterial;
     public Material TeamTwoMaterial;
+    private TimerControler TC;
 
     // Start is called before the first frame update
     void Start()
     {
+        speedstore = speed;
         PV = GetComponent<PhotonView>();
-       
+        TC = GameObject.Find("GameCanvas").transform.GetChild(0).GetComponent<TimerControler>();
+
         if (!PV.IsMine)
         {
             Destroy(GetComponent<Rigidbody>());
@@ -37,6 +41,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
         co.Add(StartCoroutine(check()));
+        //TC.addToTotal(5);
     }
 
     // Update is called once per frame
@@ -124,8 +129,10 @@ public class PlayerController : MonoBehaviour
     public List<Coroutine> co = new List<Coroutine>();
     IEnumerator check()
     {
+        speed = speed / 2f;
         yield return new WaitForSeconds(0.1f);
         CanBullet1 = true;
+        speed = speedstore;
         //yield return new WaitForSeconds(1.6f);
         //CanBullet2 = true;
     }
@@ -144,6 +151,18 @@ public class PlayerController : MonoBehaviour
         else
         {
             GetComponent<MeshRenderer>().material = TeamTwoMaterial;
+        }
+    }
+
+    public void updateScore(bool remove)
+    {
+        if(TeamNumber == 1)
+        {
+            TC.addEToBlue(remove);
+        }
+        else
+        {
+            TC.addEToRed(remove);
         }
     }
     /*[PunRPC]

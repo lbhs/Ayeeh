@@ -10,15 +10,18 @@ public class ElectronManager : MonoBehaviour
     //[HideInInspector]
     public int countOfCurrentElectrons;
     private PhotonView PV;
+    private PlayerController PC;
     // Start is called before the first frame update
     void Start()
     {
         PV = GetComponent<PhotonView>();
+        PC = gameObject.transform.parent.GetComponent<PlayerController>();
         foreach (var item in E)
         {
             if (item.activeSelf == true)
             {
                 countOfCurrentElectrons++;
+                //PC.updateScore(false);
             }
             item.GetComponent<Rigidbody>().angularVelocity = new Vector3(Random.Range(0.1f,15f), Random.Range(0.1f, 10f), Random.Range(0.1f, 10f));
         }
@@ -48,6 +51,7 @@ public class ElectronManager : MonoBehaviour
         {
             AddElectron();
             previousECount++;
+            //PC.updateScore(true);
         }
     }
 

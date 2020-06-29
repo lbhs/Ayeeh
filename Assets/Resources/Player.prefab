@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1ef353d7ceb754bb2fe3ab3fa7aaa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 16
   cam: {fileID: 1030712848054899814, guid: 70062ddd2b2e8a14b80c3f996e52912f, type: 3}
   Camera: {fileID: 0}
   gravityScale: 0.0025
