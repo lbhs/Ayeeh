@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: viewIdField
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -708691775799626952, guid: d5e4af41ecac4434fa7ee83031f230ab,
+        type: 3}
+      propertyPath: OwnershipTransfer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9126299375370170993, guid: d5e4af41ecac4434fa7ee83031f230ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -147,7 +152,7 @@ PrefabInstance:
     - target: {fileID: 9126299375370170993, guid: d5e4af41ecac4434fa7ee83031f230ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.062877e-17
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 9126299375370170993, guid: d5e4af41ecac4434fa7ee83031f230ab,
         type: 3}
@@ -178,21 +183,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126299375370170993, guid: d5e4af41ecac4434fa7ee83031f230ab,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126299375370170993, guid: d5e4af41ecac4434fa7ee83031f230ab,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126299375370170993, guid: d5e4af41ecac4434fa7ee83031f230ab,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9126299375370170994, guid: d5e4af41ecac4434fa7ee83031f230ab,
         type: 3}
@@ -287,6 +277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057404834687402029, guid: 70062ddd2b2e8a14b80c3f996e52912f,
+        type: 3}
+      propertyPath: viewIdField
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70062ddd2b2e8a14b80c3f996e52912f, type: 3}
@@ -855,6 +850,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 920259717950952279, guid: 67984d133aefef84e95798336ac129fd,
+        type: 3}
+      propertyPath: viewIdField
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6130312501874182997, guid: 67984d133aefef84e95798336ac129fd,
         type: 3}
       propertyPath: m_Name

@@ -26,17 +26,19 @@ public class ElectronScript : MonoBehaviour
         {
             PhotonNetwork.Destroy(gameObject);
         }
-        if(transform.position.y < 0)
+        /*if(transform.position.y < 0 && PV.IsMine)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.y);
             transform.position = new Vector3(transform.position.x, 0.1f, transform.position.y);
-        }
+        }*/
         //rb.velocity = new Vector3(Random.Range(-5, 5), 0, Random.Range(-5, 5));
     }
 
     IEnumerator Launch()
     {
-        yield return new WaitForSeconds(0.2f);
+        colider.enabled = false;
+        trigger.enabled = false;
+        yield return new WaitForSeconds(0.4f);
         colider.enabled = true;
         trigger.enabled = true;
     }

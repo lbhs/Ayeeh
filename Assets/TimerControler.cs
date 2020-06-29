@@ -94,7 +94,7 @@ public class TimerControler : MonoBehaviour
                 redcount = redcount + EM.countOfCurrentElectrons;
             }
         }
-        slider.maxValue = totalElectronCount;
+        slider.maxValue = redcount+bluecount;
         slider.value = redcount;
         tBlue.text = bluecount.ToString();
         tRed.text = redcount.ToString();

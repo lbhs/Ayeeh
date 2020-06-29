@@ -132,6 +132,8 @@ public class PlayerController : MonoBehaviour
         speed = speed / 2f;
         yield return new WaitForSeconds(0.1f);
         CanBullet1 = true;
+
+        yield return new WaitForSeconds(0.4f);
         speed = speedstore;
         //yield return new WaitForSeconds(1.6f);
         //CanBullet2 = true;
@@ -144,6 +146,7 @@ public class PlayerController : MonoBehaviour
     [PunRPC]
     void SetTeamRPC(int team)
     {
+        TeamNumber = team;
         if (team == 1)
         {
             GetComponent<MeshRenderer>().material = TeamOneMaterial;
