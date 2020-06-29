@@ -992,5 +992,5 @@ MonoBehaviour:
   image: {fileID: 2049572403862079821}
   PointOne: {fileID: 6374335119920366088}
   PointTwo: {fileID: 2486761440005722318}
-  numOfPoints: 5
+  numOfPoints: 3
   CurrentNumOfPoints: 0
