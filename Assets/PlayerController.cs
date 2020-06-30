@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     public Material TeamOneMaterial;
     public Material TeamTwoMaterial;
     private TimerControler TC;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -64,9 +63,10 @@ public class PlayerController : MonoBehaviour
         }
         targetDirection.y = targetDirection.y + (Physics.gravity.y * gravityScale);
         controller.Move(targetDirection* speed * Time.deltaTime);
-       // rb.AddForce(Input.GetAxis("Vertical") * speed, 0, Input.GetAxis("Vertical") * speed);
+        // rb.AddForce(Input.GetAxis("Vertical") * speed, 0, Input.GetAxis("Vertical") * speed);
         //rb.AddForce(Input.GetAxis("Horizontal") * speed, 0, -Input.GetAxis("Horizontal") * speed);
-       // print(Camera.main.transform.forward);
+        // print(Camera.main.transform.forward);
+   
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Ray ray = Camera.transform.GetChild(0).GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
@@ -133,11 +133,13 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         CanBullet1 = true;
 
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.1f);
         speed = speedstore;
         //yield return new WaitForSeconds(1.6f);
         //CanBullet2 = true;
     }
+
+
     
     public void SetTeam(int team)
     {
