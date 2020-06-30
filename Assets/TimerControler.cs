@@ -17,11 +17,14 @@ public class TimerControler : MonoBehaviour
     private int totalElectronCount;
     private int bluecount;
     private int redcount;
+    public GameObject GameOverObject;
+    private Animator Anim;
     // Start is called before the first frame update
     void Start()
     {
         PV = GetComponent<PhotonView>();
         textUI = GetComponent<Text>();
+        Anim = GetComponent<Animator>();
         if (PhotonNetwork.IsMasterClient)
         {
             PV.RPC("starTimer", RpcTarget.All, PhotonNetwork.Time);
@@ -103,8 +106,25 @@ public class TimerControler : MonoBehaviour
         {
             time -= Time.deltaTime;
             textUI.text = decimal.Truncate(decimal.Parse(time.ToString())).ToString();
+            if(time <= 5 && Anim.GetBool("End") == false)
+            {
+                Anim.SetBool("End", true);
+            }
             if (time < 0)
             {
+                GameObject GOO = Instantiate(GameOverObject, Vector3.zero, Quaternion.identity);
+                if (redcount > bluecount)
+                {
+                    GOO.GetComponent<GameOverObjectScript>().winner = "Red Wins!";
+                }
+                else if (redcount < bluecount)
+                {
+                    GOO.GetComponent<GameOverObjectScript>().winner = "Blue Wins!";
+                }
+                else
+                {
+                    GOO.GetComponent<GameOverObjectScript>().winner = "It was a Tie";
+                }
                 SceneManager.LoadScene(3);
             }
         }
