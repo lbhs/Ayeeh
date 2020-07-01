@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EZCameraShake;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,12 +24,23 @@ public class PlayerController : MonoBehaviour
     public Material TeamOneMaterial;
     public Material TeamTwoMaterial;
     private TimerControler TC;
+    public Text UserNameText;
+    public Text UserNameScore;
     // Start is called before the first frame update
     void Start()
     {
         speedstore = speed;
         PV = GetComponent<PhotonView>();
         TC = GameObject.Find("GameCanvas").transform.GetChild(0).GetComponent<TimerControler>();
+        if (PV.Owner.NickName != "")
+        {
+            UserNameText.text = PV.Owner.NickName;
+        }
+        else if(PV.IsMine)
+        {
+            UserNameText.text = "Player " + Random.Range(0, 1000);
+            PV.RPC("SetNameRPC", RpcTarget.All, UserNameText.text);
+        }
 
         if (!PV.IsMine)
         {
@@ -124,6 +136,7 @@ public class PlayerController : MonoBehaviour
         {
             CanBullet2 = false;
         }
+
     }
 
     public List<Coroutine> co = new List<Coroutine>();
@@ -139,7 +152,11 @@ public class PlayerController : MonoBehaviour
         //CanBullet2 = true;
     }
 
-
+    [PunRPC]
+    private void SetNameRPC(string name)
+    {
+        UserNameText.text = name;
+    }
     
     public void SetTeam(int team)
     {

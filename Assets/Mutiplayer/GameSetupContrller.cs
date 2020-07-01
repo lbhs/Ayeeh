@@ -29,11 +29,6 @@ public class GameSetupContrller : MonoBehaviour
         PV = GetComponent<PhotonView>();
     }
 
-    private void Start()
-    {
-        print(PhotonNetwork.PlayerList[0]);
-    }
-
     private void CreatePlayer()
     {
         Debug.Log("Creating Player");

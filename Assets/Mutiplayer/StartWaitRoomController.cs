@@ -20,7 +20,7 @@ public class StartWaitRoomController : MonoBehaviourPunCallbacks
     public int miniumStartPlayCount;
     public GameObject StartNowButtonParent;
     public GameObject StartNowButton;
-
+    public InputField IF;
     private bool StartingGame;
     // Start is called before the first frame update
     void Start()
@@ -82,5 +82,12 @@ public class StartWaitRoomController : MonoBehaviourPunCallbacks
         if (StartingGame)
             return;
         StartGame();
+    }
+    public void SetUsername()
+    {
+        if (IF.text != null)
+        {
+            PhotonNetwork.NickName = IF.text;
+        }
     }
 }
