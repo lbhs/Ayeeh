@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 8fc03c870428bbc42b8149aa781c3a00
+  - enabled: 1
+    path: Assets/Scenes/Microscope.unity
+    guid: a7f411031ca861d4a95e0f5b926260a1
   m_configObjects: {}
