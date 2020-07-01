@@ -1494,7 +1494,7 @@ GameObject:
   - component: {fileID: 626328962}
   m_Layer: 0
   m_Name: RedBloodCells
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4277,7 +4277,7 @@ GameObject:
   - component: {fileID: 1708399527}
   m_Layer: 0
   m_Name: VIRUSES
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5111,7 +5111,7 @@ GameObject:
   - component: {fileID: 289038607834218393}
   m_Layer: 0
   m_Name: microscope
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
