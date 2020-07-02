@@ -81,7 +81,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215688, g: 0.19215688, b: 0.19215688, a: 0}
+  m_BackGroundColor: {r: 0.28235295, g: 0.64705884, b: 0.79607844, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1032,6 +1032,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 120
+  slider: {fileID: 0}
+  tRed: {fileID: 0}
+  tBlue: {fileID: 0}
+  GameOverObject: {fileID: 0}
 --- !u!1 &7434595312717037414
 GameObject:
   m_ObjectHideFlags: 0
