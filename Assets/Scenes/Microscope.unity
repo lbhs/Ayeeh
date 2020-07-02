@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 10071268}
   m_Layer: 0
   m_Name: RedBloodCell (7)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -307,6 +307,50 @@ Transform:
   m_Father: {fileID: 908429218}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 121.709, y: -0.000015258789, z: -0.000015258789}
+--- !u!1 &130767225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130767226}
+  - component: {fileID: 130767227}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &130767226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130767225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.86, z: -10.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790893892}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &130767227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130767225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 197.00453, y: 79.16933, z: 42.555374}
+  m_Center: {x: 41.613274, y: -10.606415, z: -20.777687}
 --- !u!1 &134265451
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +365,7 @@ GameObject:
   - component: {fileID: 134265453}
   m_Layer: 0
   m_Name: RedBloodCell (13)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -414,7 +458,7 @@ GameObject:
   - component: {fileID: 187944396}
   m_Layer: 0
   m_Name: VIRUS (6)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -505,7 +549,7 @@ GameObject:
   - component: {fileID: 191454451}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -551,7 +595,7 @@ GameObject:
   - component: {fileID: 218349879}
   m_Layer: 0
   m_Name: Glass (2)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -776,7 +820,7 @@ GameObject:
   - component: {fileID: 276958432}
   m_Layer: 0
   m_Name: Colider (8)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -825,7 +869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &357225622
 Transform:
   m_ObjectHideFlags: 0
@@ -867,7 +911,7 @@ GameObject:
   - component: {fileID: 390072838}
   m_Layer: 0
   m_Name: RedBloodCell (11)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1004,7 +1048,7 @@ GameObject:
   - component: {fileID: 404029517}
   m_Layer: 0
   m_Name: RedBloodCell (15)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1099,7 +1143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &436371031
 Transform:
   m_ObjectHideFlags: 0
@@ -1127,6 +1171,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0335035, y: 6.1129313, z: 3.9806283}
   m_Center: {x: -0.03944826, y: 2.5564656, z: 0.2503289}
+--- !u!1 &485356975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485356976}
+  - component: {fileID: 485356977}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &485356976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485356975}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 17, y: 11.86, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790893892}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &485356977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485356975}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 254.44029, y: 59.013702, z: 44.961716}
+  m_Center: {x: 8.945641, y: -3.9106827, z: 21.980864}
 --- !u!1 &506683925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1229,7 @@ GameObject:
   - component: {fileID: 506683926}
   m_Layer: 0
   m_Name: RedBloodCell (3)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1311,7 +1399,7 @@ GameObject:
   - component: {fileID: 579308388}
   m_Layer: 0
   m_Name: VIRUS (7)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1404,7 +1492,7 @@ GameObject:
   - component: {fileID: 600002266}
   m_Layer: 0
   m_Name: RedBloodCell (6)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1532,7 +1620,7 @@ Transform:
   - {fileID: 1719925615}
   - {fileID: 357225622}
   m_Father: {fileID: 819395780}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694948739
 GameObject:
@@ -1548,7 +1636,7 @@ GameObject:
   - component: {fileID: 694948743}
   m_Layer: 0
   m_Name: VIRUS (1)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1641,7 +1729,7 @@ GameObject:
   - component: {fileID: 708631615}
   m_Layer: 0
   m_Name: RedBloodCell (9)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1732,7 +1820,7 @@ GameObject:
   - component: {fileID: 729935008}
   m_Layer: 0
   m_Name: Colider (2)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1808,7 +1896,7 @@ GameObject:
   - component: {fileID: 773598853}
   m_Layer: 0
   m_Name: RedBloodCell (8)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1899,7 +1987,7 @@ GameObject:
   - component: {fileID: 780693202}
   m_Layer: 0
   m_Name: Colider (4)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1943,7 +2031,7 @@ GameObject:
   - component: {fileID: 781929878}
   m_Layer: 0
   m_Name: Colider (3)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1989,7 +2077,7 @@ GameObject:
   - component: {fileID: 794045542}
   m_Layer: 0
   m_Name: VIRUS (9)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2097,6 +2185,7 @@ Transform:
   m_Children:
   - {fileID: 908429218}
   - {fileID: 1531810718}
+  - {fileID: 1790893892}
   - {fileID: 4511707080879586365}
   - {fileID: 1708399527}
   - {fileID: 626328962}
@@ -2115,7 +2204,7 @@ GameObject:
   - component: {fileID: 829778782}
   m_Layer: 0
   m_Name: Colider (5)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2147,6 +2236,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.011704912, y: 0.00092972984, z: 0.01726869}
   m_Center: {x: -0.00008899709, y: -0.0046011484, z: 0.006164849}
+--- !u!1 &836817698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836817699}
+  - component: {fileID: 836817700}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &836817699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836817698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.86, z: 28.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790893892}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &836817700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836817698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200.01358, y: 96.56366, z: 55.452316}
+  m_Center: {x: 13.056381, y: -4.9143066, z: 27.226158}
 --- !u!1 &849714149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,7 +2296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &849714150
 Transform:
   m_ObjectHideFlags: 0
@@ -2359,7 +2492,7 @@ GameObject:
   - component: {fileID: 882070781}
   m_Layer: 0
   m_Name: Glass (1)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2575,7 +2708,7 @@ GameObject:
   - component: {fileID: 1009030133}
   m_Layer: 0
   m_Name: RedBloodCell (10)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2832,7 +2965,7 @@ GameObject:
   - component: {fileID: 1173531049}
   m_Layer: 0
   m_Name: VIRUS (10)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2925,7 +3058,7 @@ GameObject:
   - component: {fileID: 1194336467}
   m_Layer: 0
   m_Name: RedBloodCell (5)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3004,6 +3137,50 @@ Transform:
   m_Father: {fileID: 626328962}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -113.28, y: -142.564, z: 157.582}
+--- !u!1 &1256612537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256612538}
+  - component: {fileID: 1256612539}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1256612538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256612537}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -17.6, y: 11.86, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790893892}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &1256612539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256612537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 294.42197, y: 97.83876, z: 59.45603}
+  m_Center: {x: 13.931198, y: -10.325813, z: -29.228024}
 --- !u!1 &1305999589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,7 +3225,7 @@ GameObject:
   - component: {fileID: 1335836216}
   m_Layer: 0
   m_Name: VIRUS (11)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3171,7 +3348,7 @@ GameObject:
   - component: {fileID: 1378277355}
   m_Layer: 0
   m_Name: RedBloodCell
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3264,7 +3441,7 @@ GameObject:
   - component: {fileID: 1404201891}
   m_Layer: 0
   m_Name: VIRUS (8)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3357,7 +3534,7 @@ GameObject:
   - component: {fileID: 1406812897}
   m_Layer: 0
   m_Name: VIRUS (4)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3450,7 +3627,7 @@ GameObject:
   - component: {fileID: 1421285257}
   m_Layer: 0
   m_Name: RedBloodCell (2)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3631,7 +3808,7 @@ GameObject:
   - component: {fileID: 1506130933}
   m_Layer: 0
   m_Name: RedBloodCell (12)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3759,7 +3936,7 @@ GameObject:
   - component: {fileID: 1540735650}
   m_Layer: 0
   m_Name: VIRUS (2)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3852,7 +4029,7 @@ GameObject:
   - component: {fileID: 1608361621}
   m_Layer: 0
   m_Name: VIRUS (5)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3943,7 +4120,7 @@ GameObject:
   - component: {fileID: 1617423215}
   m_Layer: 0
   m_Name: Colider (1)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3990,7 +4167,7 @@ GameObject:
   - component: {fileID: 1623367953}
   m_Layer: 0
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4150,7 +4327,7 @@ GameObject:
   - component: {fileID: 1680549333}
   m_Layer: 0
   m_Name: Colider (6)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4306,7 +4483,7 @@ Transform:
   - {fileID: 1173531048}
   - {fileID: 1335836215}
   m_Father: {fileID: 819395780}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719218639
 GameObject:
@@ -4322,7 +4499,7 @@ GameObject:
   - component: {fileID: 1719218641}
   m_Layer: 0
   m_Name: RedBloodCell (14)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4417,7 +4594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1719925615
 Transform:
   m_ObjectHideFlags: 0
@@ -4445,6 +4622,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0335035, y: 6.1129313, z: 3.9806283}
   m_Center: {x: -0.03944826, y: 2.5564656, z: 0.2503289}
+--- !u!1 &1790893891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790893892}
+  m_Layer: 0
+  m_Name: Walls (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1790893892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790893891}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children:
+  - {fileID: 130767226}
+  - {fileID: 836817699}
+  - {fileID: 1256612538}
+  - {fileID: 485356976}
+  - {fileID: 1959024584}
+  m_Father: {fileID: 819395780}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1793544594
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,7 +4673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1793544595
 Transform:
   m_ObjectHideFlags: 0
@@ -4503,7 +4715,7 @@ GameObject:
   - component: {fileID: 1809551394}
   m_Layer: 0
   m_Name: VIRUS (3)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4594,7 +4806,7 @@ GameObject:
   - component: {fileID: 1817141534}
   m_Layer: 0
   m_Name: Colider (7)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4670,7 +4882,7 @@ GameObject:
   - component: {fileID: 1883507416}
   m_Layer: 0
   m_Name: RedBloodCell (1)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4779,6 +4991,50 @@ Transform:
   m_Father: {fileID: 1693938886}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1959024583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959024584}
+  - component: {fileID: 1959024585}
+  m_Layer: 0
+  m_Name: GameObject (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1959024584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959024583}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 10.7, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790893892}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1959024585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959024583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 158.74911, y: 311.59814, z: 36.80751}
+  m_Center: {x: -6.615036, y: 3.7071915, z: -17.903759}
 --- !u!1 &2032159379
 GameObject:
   m_ObjectHideFlags: 0
@@ -4793,7 +5049,7 @@ GameObject:
   - component: {fileID: 2032159380}
   m_Layer: 0
   m_Name: RedBloodCell (4)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4884,7 +5140,7 @@ GameObject:
   - component: {fileID: 2058953317}
   m_Layer: 0
   m_Name: Colider
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5002,7 +5258,7 @@ GameObject:
   - component: {fileID: 1400340087745107795}
   m_Layer: 0
   m_Name: VIRUS
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5096,7 +5352,7 @@ Transform:
   - {fileID: 191454450}
   - {fileID: 1662568042}
   m_Father: {fileID: 819395780}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5360112613942836619
 GameObject:
