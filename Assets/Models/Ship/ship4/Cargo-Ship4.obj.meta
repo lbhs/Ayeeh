@@ -3,7 +3,52 @@ guid: 64dbc9c1334486b4d8dcd64146533fb6
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 76be9ce2f925fbd45942b2da1073df3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: custom6
+    second: {fileID: 2100000, guid: b9514d5bd9246ce478595a99bc77f0f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: custom7
+    second: {fileID: 2100000, guid: 9a535d6b9cacb404ca6b230e5d06883e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: custom8
+    second: {fileID: 2100000, guid: 9f1f63b932a44294aa156747217ae9aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: custom9
+    second: {fileID: 2100000, guid: 7f242faac4babf04c88368d9e683a596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 7bd8b9f105d2c9641976d864e8477110, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalGreen
+    second: {fileID: 2100000, guid: c6141233589348a4a87e8a82e68a93f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metalLight
+    second: {fileID: 2100000, guid: b561cb3a9a6a5374dbc7d1d1547495f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: 9c3c3c06be3cae64085e98b20dca2a40, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
