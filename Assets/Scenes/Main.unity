@@ -1342,13 +1342,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288225512}
-  m_LocalRotation: {x: 0.10454785, y: -0.20707667, z: 0.23117888, w: 0.94485205}
+  m_LocalRotation: {x: -0.18705033, y: -0.18125223, z: -0.17142718, w: -0.95014346}
   m_LocalPosition: {x: 3.1, y: 0.5, z: -7.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2074779094}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 17.056002, y: -21.024, z: 24.310001}
+  m_LocalEulerAnglesHint: {x: 17.056002, y: -334.7, z: 24.310001}
 --- !u!1001 &290059759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1995,7 +1995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &410157450
 Transform:
   m_ObjectHideFlags: 0
@@ -5598,7 +5598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1221695233
 Transform:
   m_ObjectHideFlags: 0
@@ -5966,7 +5966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1330760199
 Transform:
   m_ObjectHideFlags: 0
@@ -10352,6 +10352,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636316314216189045, guid: 52c09ab7328958648af4953f3af2ff0e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636316314216189045, guid: 52c09ab7328958648af4953f3af2ff0e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636316314216189045, guid: 52c09ab7328958648af4953f3af2ff0e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1636316314275975779, guid: 52c09ab7328958648af4953f3af2ff0e,
         type: 3}
