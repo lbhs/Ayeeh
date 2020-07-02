@@ -22,8 +22,8 @@ public class CameraFollow : MonoBehaviour {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
-            yaw += 2 * Input.GetAxisRaw("Mouse X");
-            pitch -= 2 * Input.GetAxis("Mouse Y");
+            yaw +=  1.75f * Input.GetAxisRaw("Mouse X");
+            pitch -= 1.75f * Input.GetAxis("Mouse Y");
 
         }
         else

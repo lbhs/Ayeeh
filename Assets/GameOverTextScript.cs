@@ -7,11 +7,11 @@ public class GameOverTextScript : MonoBehaviour
 {
     public Color redColor;
     public Color blueColor;
-    private bool done = false;
+    private bool done;
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("GameOverObject(Clone)") != null && done == false)
+        if(GameObject.Find("GameOverObject(Clone)") != null)
         {
             GetComponent<Text>().text = GameObject.Find("GameOverObject(Clone)").GetComponent<GameOverObjectScript>().winner;
             if(GetComponent<Text>().text == "Blue Wins!")
@@ -22,7 +22,6 @@ public class GameOverTextScript : MonoBehaviour
             {
                 GetComponent<Text>().color = redColor;
             }
-            done = true;
         }
         else
         {
