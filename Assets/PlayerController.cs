@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
                         GameObject b = PhotonNetwork.Instantiate("Bullet2", transform.position, Quaternion.identity);
                         b.transform.GetChild(0).GetComponent<BulletScript>().hitPointRPC(hit.point);
 
-                        Camera.GetComponent<CameraFollow>().lightningScript.BackToZero();
+                        Camera.GetComponent<CameraFollow>().RemoveALightning();
                         Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Shake");
                         CanBullet1 = false;
                         CanBullet2 = false;
@@ -127,8 +127,15 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
-        if (0 == Camera.GetComponent<CameraFollow>().lightningScript.CurrentNumOfPoints)
+        bool yes = false;
+        foreach (var item in Camera.GetComponent<CameraFollow>().lightningScripts)
+        {
+            if (item.CurrentNumOfPoints == 0)
+            {
+                yes = true;
+            }
+        }
+        if (yes == true)
         {
             CanBullet2 = true;
         }

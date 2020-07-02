@@ -13,12 +13,17 @@ public class LightningScript : MonoBehaviour
     private Vector2 resolution;
     private List<float> yValues = new List<float>();
     private float intervals;
+    public bool startAtZero;
 
     // Start is called before the first frame update
     void Start()
     {
         resolution = new Vector2(Screen.width, Screen.height);
         CaculatePoints();
+        if (startAtZero)
+        {
+            BackToZero();
+        }
     }
 
     // Update is called once per frame

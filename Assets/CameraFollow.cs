@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour {
     public float pitch = 0;
     public Animator LightningAnim;
     public Text ElectronCountText;
-    public LightningScript lightningScript;
+    public List<LightningScript> lightningScripts = new List<LightningScript>();
 
     private void Update()
     {
@@ -35,5 +35,51 @@ public class CameraFollow : MonoBehaviour {
         transform.eulerAngles = new Vector3(pitch, yaw, 0);
 
         ElectronCountText.text = CameraFollowObj.transform.root.GetComponent<PlayerController>().EM.countOfCurrentElectrons.ToString();
+    }
+
+    public void MoveUpLightning()
+    {
+        bool found = false;
+                print("up");
+        /*foreach (var item in lightningScripts)
+        {
+            if(item.numOfPoints > item.CurrentNumOfPoints && found == false)
+            {
+                item.MoveUp();
+                found = true;
+            }
+        }*/
+        if(0< lightningScripts[0].CurrentNumOfPoints)
+        {
+            lightningScripts[0].MoveUp();
+        }
+        else if (0 < lightningScripts[1].CurrentNumOfPoints)
+        {
+            lightningScripts[1].MoveUp();
+        }
+        else if (0 < lightningScripts[2].CurrentNumOfPoints)
+        {
+            lightningScripts[2].MoveUp();
+        }
+        else if (0 < lightningScripts[3].CurrentNumOfPoints)
+        {
+            lightningScripts[3].MoveUp();
+        }
+    }
+
+    public void RemoveALightning()
+    {
+                print("zero");
+        List<LightningScript> ls = lightningScripts;
+        ls.Reverse();
+        bool found = false;
+        foreach (var item in ls)
+        {
+            if (item.numOfPoints > item.CurrentNumOfPoints && found == false)
+            {
+                item.BackToZero();
+                found = true;
+            }
+        }
     }
 }

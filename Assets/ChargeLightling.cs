@@ -19,7 +19,7 @@ public class ChargeLightling : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().LightningAnim.SetTrigger("Shake");
-            other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().lightningScript.MoveUp();
+            other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().MoveUpLightning();
             PV.RPC("Disable", RpcTarget.MasterClient);
             
         }

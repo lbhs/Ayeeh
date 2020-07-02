@@ -54,7 +54,7 @@ public class ElectronScript : MonoBehaviour
                 trigger.enabled = false;
                 if (other.GetComponent<PlayerController>().Camera != null)
                 {
-                    other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().lightningScript.MoveUp();
+                    other.GetComponent<PlayerController>().Camera.GetComponent<CameraFollow>().MoveUpLightning();
                 }
                 otherEM.add();
                 if (PV.IsMine)
