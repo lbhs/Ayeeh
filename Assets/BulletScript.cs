@@ -25,7 +25,7 @@ public class BulletScript : MonoBehaviour
         if (other.tag == "floor")
         {
             //world hit
-            print("Play particle here");
+            //print("Play particle here");
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
             if (PV.IsMine)
