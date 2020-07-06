@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private TimerControler TC;
     public Text UserNameText;
     public Text UserNameScore;
+    public GameObject GameOverUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +62,12 @@ public class PlayerController : MonoBehaviour
         if (!PV.IsMine)
         {
             return;
+        }
+        if(EM.countOfCurrentElectrons == 0)
+        {
+            Instantiate(GameOverUI, transform.position, Quaternion.identity);
+            PhotonNetwork.Instantiate("Explode", transform.position, Quaternion.identity);
+            PhotonNetwork.Destroy(gameObject);
         }
         // rb.AddForce(new Vector3(Input.GetAxis("Vertical") * speed,0, Input.GetAxis("Horizontal") * speed));
         //rb.AddForce(Camera.main.transform.forward* Input.GetAxis("Vertical")*speed);

@@ -497,7 +497,9 @@ MonoBehaviour:
   TeamOneMaterial: {fileID: 2100000, guid: b6001ece6b240494cb3cb7fb8213cfe5, type: 2}
   TeamTwoMaterial: {fileID: 2100000, guid: d37616a886ba6c74ab369874b79a1e22, type: 2}
   UserNameText: {fileID: 8676936708643237917}
-  UserNameScore: {fileID: 0}
+  UserNameScore: {fileID: 2494464276319921761}
+  GameOverUI: {fileID: 2058218443780605202, guid: ffd2a73e4c69a3c45a3fbad190d8cdd9,
+    type: 3}
 --- !u!143 &7036018041307512598
 CharacterController:
   m_ObjectHideFlags: 0

@@ -4,16 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CameraFollow : MonoBehaviour {
-    
-	public GameObject CameraFollowObj;
+
+    public GameObject CameraFollowObj;
     public float yaw = 0;
     public float pitch = 0;
     public Animator LightningAnim;
     public Text ElectronCountText;
     public List<LightningScript> lightningScripts = new List<LightningScript>();
 
+    private bool startedDestory;
     private void Update()
     {
+        if (CameraFollowObj == null)
+        {
+            if (startedDestory == false)
+            {
+                startedDestory = true;
+                Destroy(gameObject, 4);
+            }
+        }
         transform.position = CameraFollowObj.transform.position;
         transform.rotation = CameraFollowObj.transform.rotation;
 
@@ -22,7 +31,7 @@ public class CameraFollow : MonoBehaviour {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
-            yaw +=  1.75f * Input.GetAxisRaw("Mouse X");
+            yaw += 1.75f * Input.GetAxisRaw("Mouse X");
             pitch -= 1.75f * Input.GetAxis("Mouse Y");
 
         }
@@ -35,12 +44,13 @@ public class CameraFollow : MonoBehaviour {
         transform.eulerAngles = new Vector3(pitch, yaw, 0);
 
         ElectronCountText.text = CameraFollowObj.transform.root.GetComponent<PlayerController>().EM.countOfCurrentElectrons.ToString();
+
     }
 
     public void MoveUpLightning()
     {
         bool found = false;
-                print("up");
+        print("up");
         /*foreach (var item in lightningScripts)
         {
             if(item.numOfPoints > item.CurrentNumOfPoints && found == false)
@@ -49,7 +59,7 @@ public class CameraFollow : MonoBehaviour {
                 found = true;
             }
         }*/
-        if(0< lightningScripts[0].CurrentNumOfPoints)
+        if (0 < lightningScripts[0].CurrentNumOfPoints)
         {
             lightningScripts[0].MoveUp();
         }
@@ -69,7 +79,7 @@ public class CameraFollow : MonoBehaviour {
 
     public void RemoveALightning()
     {
-                print("zero");
+        print("zero");
         List<LightningScript> ls = lightningScripts;
         ls.Reverse();
         bool found = false;
@@ -82,4 +92,5 @@ public class CameraFollow : MonoBehaviour {
             }
         }
     }
+
 }

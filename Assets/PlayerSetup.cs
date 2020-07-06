@@ -8,6 +8,7 @@ public class PlayerSetup : MonoBehaviour
     public PhotonView PV;
     public GameObject PlayerAtom;
     public int teamNumber;
+    private bool Spawned;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class PlayerSetup : MonoBehaviour
     }
     void Update()
     {
-        if (PlayerAtom == null && teamNumber != 0)
+        if (PlayerAtom == null && teamNumber != 0 && Spawned == false)
         {
             if (teamNumber == 1)
             {
@@ -29,6 +30,7 @@ public class PlayerSetup : MonoBehaviour
                 {
                     PlayerAtom = PhotonNetwork.Instantiate("Player", GameSetupContrller.GS.spawnPointsTeamOne[spawnpicker].position, GameSetupContrller.GS.spawnPointsTeamOne[spawnpicker].rotation);
                     PlayerAtom.GetComponent<PlayerController>().SetTeam(teamNumber);
+                    Spawned = true;
                 }
             }
             else
@@ -38,6 +40,7 @@ public class PlayerSetup : MonoBehaviour
                 {
                     PlayerAtom = PhotonNetwork.Instantiate("Player", GameSetupContrller.GS.spawnPointsTeamTwo[spawnpicker].position, GameSetupContrller.GS.spawnPointsTeamTwo[spawnpicker].rotation);
                     PlayerAtom.GetComponent<PlayerController>().SetTeam(teamNumber);
+                    Spawned = true;
                 }
             }
         }

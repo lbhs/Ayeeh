@@ -834,6 +834,8 @@ GameObject:
   - component: {fileID: 873509440}
   - component: {fileID: 873509439}
   - component: {fileID: 873509438}
+  - component: {fileID: 873509443}
+  - component: {fileID: 873509442}
   m_Layer: 0
   m_Name: SpectatorCamera
   m_TagString: Untagged
@@ -898,8 +900,8 @@ Camera:
   m_GameObject: {fileID: 873509437}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.16862746, g: 0.4392157, b: 0.54901963, a: 0}
   m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -946,6 +948,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+--- !u!81 &873509442
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873509437}
+  m_Enabled: 1
+--- !u!114 &873509443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873509437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f735d9578c7bab341955b37a94f78463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &879072637
 GameObject:
   m_ObjectHideFlags: 0

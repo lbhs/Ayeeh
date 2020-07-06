@@ -11,7 +11,9 @@ public class GameOverTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("GameOverObject(Clone)") != null)
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        if (GameObject.Find("GameOverObject(Clone)") != null)
         {
             GetComponent<Text>().text = GameObject.Find("GameOverObject(Clone)").GetComponent<GameOverObjectScript>().winner;
             if(GetComponent<Text>().text == "Blue Wins!")
