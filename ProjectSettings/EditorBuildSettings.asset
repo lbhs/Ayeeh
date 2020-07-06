@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Microscope.unity
     guid: a7f411031ca861d4a95e0f5b926260a1
   - enabled: 1
-    path: Assets/Scenes/empty.unity
+    path: Assets/Scenes/ScrapYard.unity
     guid: ce187dbab81b91e43b5a2fde664e5465
   m_configObjects: {}
