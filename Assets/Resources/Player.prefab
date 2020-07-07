@@ -501,7 +501,6 @@ MonoBehaviour:
   GameOverUI: {fileID: 2058218443780605202, guid: ffd2a73e4c69a3c45a3fbad190d8cdd9,
     type: 3}
   LJ: {fileID: 0}
-  RJ: {fileID: 0}
 --- !u!143 &7036018041307512598
 CharacterController:
   m_ObjectHideFlags: 0
