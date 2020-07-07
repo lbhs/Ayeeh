@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     public Text UserNameText;
     public Text UserNameScore;
     public GameObject GameOverUI;
+
+    public FixedJoystick Ljoystick;
+
+    public FixedJoystick RJoystick;
+    private bool mobileSupport;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +59,10 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         co.Add(StartCoroutine(check()));
         //TC.addToTotal(5);
+       // Ljoystick = cam.GetComponent<CameraFollow>().Ljoystick;
+       // RJoystick = cam.GetComponent<CameraFollow>().RJoystick;
+        mobileSupport = true;
+
     }
 
     // Update is called once per frame
@@ -63,6 +72,11 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+       // if(Ljoystick != null)
+       // {
+           // Ljoystick = cam.GetComponent<CameraFollow>().Ljoystick;
+           // RJoystick = cam.GetComponent<CameraFollow>().RJoystick;
+       // }
         if(EM.countOfCurrentElectrons == 0)
         {
             Instantiate(GameOverUI, transform.position, Quaternion.identity);
@@ -73,7 +87,15 @@ public class PlayerController : MonoBehaviour
         //rb.AddForce(Camera.main.transform.forward* Input.GetAxis("Vertical")*speed);
         //rb.AddForce(Camera.main.transform.forward * Input.GetAxis("Horizontal") * speed);
         float ystore = targetDirection.y;
-        targetDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        //if (mobileSupport == true)
+        //{
+            targetDirection = new Vector3(CameraFollow.Ljoystick.Horizontal, 0f, CameraFollow.Ljoystick.Vertical);
+            print(Ljoystick.Vertical);
+        //}
+       // else
+       // {
+         //   targetDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+       // }
         targetDirection = Camera.transform.GetChild(0).TransformDirection(targetDirection);
         targetDirection.y = ystore;
         if (controller.isGrounded)
@@ -88,6 +110,7 @@ public class PlayerController : MonoBehaviour
    
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+           
             Ray ray = Camera.transform.GetChild(0).GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))

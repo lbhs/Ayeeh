@@ -13,6 +13,15 @@ public class CameraFollow : MonoBehaviour {
     public List<LightningScript> lightningScripts = new List<LightningScript>();
 
     private bool startedDestory;
+    public static FixedJoystick Ljoystick;
+    public  FixedJoystick LjoystickRefrence;
+    public static FixedJoystick RJoystick;
+    public FixedJoystick RjoystickRefrence;
+    private void Start()
+    {
+        Ljoystick = LjoystickRefrence;
+        RJoystick = RjoystickRefrence;
+    }
     private void Update()
     {
         if (CameraFollowObj == null)
