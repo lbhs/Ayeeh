@@ -13,6 +13,9 @@ public class CameraFollow : MonoBehaviour {
     public List<LightningScript> lightningScripts = new List<LightningScript>();
 
     private bool startedDestory;
+
+    //public GameObject LJ;
+    //public GameObject RJ;
     private void Update()
     {
         if (CameraFollowObj == null)
