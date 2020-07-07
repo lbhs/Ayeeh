@@ -13,11 +13,20 @@ public class CameraFollow : MonoBehaviour {
     public List<LightningScript> lightningScripts = new List<LightningScript>();
 
     private bool startedDestory;
-
+    public bool mobileSupport;
     //public GameObject LJ;
     //public GameObject RJ;
+
+    public RightJoystick RJ;
+
+    private void Start()
+    {
+        RJ = GameObject.Find("Right Joystick").GetComponent<RightJoystick>();
+        mobileSupport = true;
+    }
     private void Update()
     {
+        
         if (CameraFollowObj == null)
         {
             if (startedDestory == false)
@@ -28,20 +37,29 @@ public class CameraFollow : MonoBehaviour {
         }
         transform.position = CameraFollowObj.transform.position;
         transform.rotation = CameraFollowObj.transform.rotation;
-
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (mobileSupport)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-
-            yaw += 1.75f * Input.GetAxisRaw("Mouse X");
-            pitch -= 1.75f * Input.GetAxis("Mouse Y");
-
+            yaw += 1.75f * RJ.GetInputDirection().x;
+            pitch -= 1f * RJ.GetInputDirection().y;
         }
         else
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            if (Input.GetKey(KeyCode.Mouse1))
+            {
+
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+
+                yaw += 1.75f * Input.GetAxisRaw("Mouse X");
+                pitch -= 1.75f * Input.GetAxis("Mouse Y");
+
+
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
         }
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0);

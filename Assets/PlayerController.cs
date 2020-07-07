@@ -27,12 +27,13 @@ public class PlayerController : MonoBehaviour
     public Text UserNameText;
     public Text UserNameScore;
     public GameObject GameOverUI;
+    private bool mobileSupport;
 
     public LeftJoystick LJ;
-    public RightJoystick RJ;
     // Start is called before the first frame update
     void Start()
     {
+        mobileSupport = true;
         speedstore = speed;
         PV = GetComponent<PhotonView>();
         TC = GameObject.Find("GameCanvas").transform.GetChild(0).GetComponent<TimerControler>();
@@ -59,7 +60,6 @@ public class PlayerController : MonoBehaviour
         //TC.addToTotal(5);
         LJ = GameObject.Find("Left Joystick").GetComponent<LeftJoystick>();
 
-        RJ = GameObject.Find("Right Joystick").GetComponent<RightJoystick>();
     }
 
     // Update is called once per frame
@@ -80,7 +80,14 @@ public class PlayerController : MonoBehaviour
         //rb.AddForce(Camera.main.transform.forward * Input.GetAxis("Horizontal") * speed);
         float ystore = targetDirection.y;
         //targetDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-        targetDirection = new Vector3(LJ.GetInputDirection().x, 0f, LJ.GetInputDirection().y);
+        if (mobileSupport)
+        {
+            targetDirection = new Vector3(LJ.GetInputDirection().x, 0f, LJ.GetInputDirection().y);
+        }
+        else
+        {
+            targetDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        }
         targetDirection = Camera.transform.GetChild(0).TransformDirection(targetDirection);
         targetDirection.y = ystore;
         if (controller.isGrounded)
