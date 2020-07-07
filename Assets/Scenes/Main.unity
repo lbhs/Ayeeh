@@ -13660,6 +13660,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1636316314275975805, guid: 52c09ab7328958648af4953f3af2ff0e,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1636316314275975807, guid: 52c09ab7328958648af4953f3af2ff0e,
         type: 3}
       propertyPath: m_Name

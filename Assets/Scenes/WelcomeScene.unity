@@ -906,6 +906,7 @@ GameObject:
   - component: {fileID: 1089888786}
   - component: {fileID: 1089888788}
   - component: {fileID: 1089888787}
+  - component: {fileID: 1089888789}
   m_Layer: 5
   m_Name: Connect Screen
   m_TagString: Untagged
@@ -973,6 +974,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089888785}
   m_CullTransparentMesh: 0
+--- !u!114 &1089888789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089888785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97afc556caea1c44969477eb7ddec74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConformX: 1
+  ConformY: 1
+  Logging: 0
 --- !u!1 &1420427480
 GameObject:
   m_ObjectHideFlags: 0
