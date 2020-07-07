@@ -39,8 +39,8 @@ public class CameraFollow : MonoBehaviour {
         transform.rotation = CameraFollowObj.transform.rotation;
         if (mobileSupport)
         {
-            yaw += 1.75f * RJ.GetInputDirection().x * Time.deltaTime;
-            pitch -= 1f * RJ.GetInputDirection().y * Time.deltaTime;
+            yaw += 160 * RJ.GetInputDirection().x * Time.deltaTime;
+            pitch -= 120 * RJ.GetInputDirection().y * Time.deltaTime;
         }
         else
         {
