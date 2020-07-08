@@ -118,13 +118,54 @@ public class CameraFollow : MonoBehaviour {
         List<LightningScript> ls = lightningScripts;
         ls.Reverse();
         bool found = false;
+        int i = 0;
         foreach (var item in ls)
         {
             if (item.numOfPoints > item.CurrentNumOfPoints && found == false)
             {
                 found = true;
                 item.BackToZero();
+                /*if (i == 0)
+                {
+                    item.BackToZero();
+                }
+                else
+                {
+                    if (ls[i - 1].numOfPoints == ls[i - 1].CurrentNumOfPoints)
+                    {
+                        item.BackToZero();
+                    }
+                    else
+                    {
+                        item.BackToZero();
+                        int currStore;
+                        if (item.CurrentNumOfPoints == 1)
+                        {
+                            currStore = 1;
+                        }
+                        else if (item.CurrentNumOfPoints == 2)
+                        {
+                            currStore = 2;
+                        }
+                        else
+                        {
+                            currStore = 0;
+                        }
+                        ls[i - 1].BackToZero();
+                        if(currStore == 1)
+                        {
+                            ls[i - 1].MoveUp();
+                            ls[i - 1].MoveUp();
+                        }
+                        else if (currStore == 2)
+                        {
+                            ls[i - 1].MoveUp();
+                        }
+                    }
+                }
+            }*/
             }
+            i++;
         }
     }
 
