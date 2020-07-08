@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour {
     private void Start()
     {
         RJ = GameObject.Find("Right Joystick").GetComponent<RightJoystick>();
-        mobileSupport = true;
+        mobileSupport = false;
     }
     private void Update()
     {
@@ -50,8 +50,8 @@ public class CameraFollow : MonoBehaviour {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                yaw += 1.75f * Input.GetAxisRaw("Mouse X") * Time.deltaTime;
-                pitch -= 1.75f * Input.GetAxis("Mouse Y") * Time.deltaTime;
+                yaw += 190 * Input.GetAxisRaw("Mouse X") * Time.deltaTime;
+                pitch -= 150 * Input.GetAxis("Mouse Y") * Time.deltaTime;
 
 
             }
@@ -61,9 +61,23 @@ public class CameraFollow : MonoBehaviour {
                 Cursor.visible = true;
             }
         }
-
+        if(pitch > 40)
+        {
+            pitch = 40;
+        }else if (pitch < -30)
+        {
+            pitch = -30;
+        }
         transform.eulerAngles = new Vector3(pitch, yaw, 0);
-
+        print(transform.eulerAngles.z);
+        /* if (transform.eulerAngles.x > 40)
+         {
+             transform.eulerAngles = new Vector3(40, transform.eulerAngles.y, 0);
+         }
+         else if (transform.eulerAngles.x < 330 && transform.eulerAngles.x > 180)
+         {
+             transform.eulerAngles = new Vector3(330, transform.eulerAngles.y, 0);
+         }*/
         ElectronCountText.text = CameraFollowObj.transform.root.GetComponent<PlayerController>().EM.countOfCurrentElectrons.ToString();
 
     }
