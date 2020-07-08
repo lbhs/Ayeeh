@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mobileSupport = true;
+        mobileSupport = mobileSupportScript.mobileSupport;
         speedstore = speed;
         PV = GetComponent<PhotonView>();
         TC = GameObject.Find("GameCanvas").transform.GetChild(0).GetComponent<TimerControler>();

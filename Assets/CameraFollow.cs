@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour {
     private void Start()
     {
         RJ = GameObject.Find("Right Joystick").GetComponent<RightJoystick>();
-        mobileSupport = false;
+        mobileSupport = mobileSupportScript.mobileSupport;
     }
     private void Update()
     {
@@ -122,8 +122,8 @@ public class CameraFollow : MonoBehaviour {
         {
             if (item.numOfPoints > item.CurrentNumOfPoints && found == false)
             {
-                item.BackToZero();
                 found = true;
+                item.BackToZero();
             }
         }
     }
