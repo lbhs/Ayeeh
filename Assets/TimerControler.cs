@@ -19,11 +19,9 @@ public class TimerControler : MonoBehaviour
     private int redcount;
     public GameObject GameOverObject;
     private Animator Anim;
-    bool HasLoaded = false;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(EndGameTrue());
         PV = GetComponent<PhotonView>();
         textUI = GetComponent<Text>();
         Anim = GetComponent<Animator>();
@@ -80,14 +78,6 @@ public class TimerControler : MonoBehaviour
     {
         startTIme = time;
     }
-
-    
-    IEnumerator EndGameTrue()
-    {
-        HasLoaded = false;
-        yield return new WaitForSecondsRealtime(5);
-        HasLoaded = true;
-    }
     // Update is called once per frame
     void Update()
     {
@@ -120,39 +110,24 @@ public class TimerControler : MonoBehaviour
             {
                 Anim.SetBool("End", true);
             }
-            if (tBlue.text == "0" || tRed.text == "0" && HasLoaded == true)
-            {
-                time = -0.1f;
-            }
             if (time < 0)
             {
-                if (hasrunthis == false)
+                GameObject GOO = Instantiate(GameOverObject, Vector3.zero, Quaternion.identity);
+                if (redcount > bluecount)
                 {
-                    hasrunthis = true;
-                    StartCoroutine(End());
+                    GOO.GetComponent<GameOverObjectScript>().winner = "Red Wins!";
                 }
+                else if (redcount < bluecount)
+                {
+                    GOO.GetComponent<GameOverObjectScript>().winner = "Blue Wins!";
+                }
+                else
+                {
+                    GOO.GetComponent<GameOverObjectScript>().winner = "It was a Tie";
+                }
+                SceneManager.LoadScene(3);
             }
         }
 
-       
-    }
-    bool hasrunthis = false;
-    IEnumerator End()
-    {
-        yield return new WaitForSecondsRealtime(4);
-        GameObject GOO = Instantiate(GameOverObject, Vector3.zero, Quaternion.identity);
-        if (redcount > bluecount)
-        {
-            GOO.GetComponent<GameOverObjectScript>().callWin(0);
-        }
-        else if (redcount < bluecount)
-        {
-            GOO.GetComponent<GameOverObjectScript>().callWin(1);
-        }
-        else
-        {
-            GOO.GetComponent<GameOverObjectScript>().callWin(2);
-        }
-        SceneManager.LoadScene(3);
     }
 }
